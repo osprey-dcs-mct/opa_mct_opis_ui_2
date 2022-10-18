@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>201</width>
-    <height>141</height>
+    <width>221</width>
+    <height>131</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -41,7 +41,7 @@
    <item>
     <widget class="QFrame" name="frame">
      <property name="sizePolicy">
-      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
        <horstretch>0</horstretch>
        <verstretch>0</verstretch>
       </sizepolicy>
@@ -64,9 +64,9 @@
      <widget class="QLabel" name="label_10">
       <property name="geometry">
        <rect>
-        <x>0</x>
-        <y>20</y>
-        <width>41</width>
+        <x>50</x>
+        <y>0</y>
+        <width>81</width>
         <height>20</height>
        </rect>
       </property>
@@ -74,16 +74,16 @@
        <string>Horiz.</string>
       </property>
       <property name="alignment">
-       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       <set>Qt::AlignCenter</set>
       </property>
      </widget>
      <widget class="QELabel" name="qelabel_21">
       <property name="geometry">
        <rect>
-        <x>40</x>
+        <x>50</x>
         <y>20</y>
         <width>81</width>
-        <height>20</height>
+        <height>21</height>
        </rect>
       </property>
       <property name="alignment">
@@ -99,9 +99,9 @@
      <widget class="QLabel" name="label_12">
       <property name="geometry">
        <rect>
-        <x>0</x>
-        <y>50</y>
-        <width>41</width>
+        <x>140</x>
+        <y>0</y>
+        <width>81</width>
         <height>20</height>
        </rect>
       </property>
@@ -109,16 +109,16 @@
        <string>Vert.</string>
       </property>
       <property name="alignment">
-       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       <set>Qt::AlignCenter</set>
       </property>
      </widget>
      <widget class="QELabel" name="qelabel_22">
       <property name="geometry">
        <rect>
-        <x>40</x>
-        <y>50</y>
+        <x>140</x>
+        <y>20</y>
         <width>81</width>
-        <height>20</height>
+        <height>21</height>
        </rect>
       </property>
       <property name="alignment">
@@ -134,14 +134,14 @@
      <widget class="QLabel" name="label_11">
       <property name="geometry">
        <rect>
-        <x>40</x>
-        <y>0</y>
-        <width>81</width>
+        <x>0</x>
+        <y>20</y>
+        <width>51</width>
         <height>20</height>
        </rect>
       </property>
       <property name="text">
-       <string>Acceptance</string>
+       <string>Accept.</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -150,14 +150,14 @@
      <widget class="QLabel" name="label_15">
       <property name="geometry">
        <rect>
-        <x>130</x>
-        <y>0</y>
-        <width>71</width>
+        <x>0</x>
+        <y>50</y>
+        <width>51</width>
         <height>20</height>
        </rect>
       </property>
       <property name="text">
-       <string>% of MSK01</string>
+       <string>% MSK</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -166,10 +166,10 @@
      <widget class="QELabel" name="qelabel_25">
       <property name="geometry">
        <rect>
-        <x>130</x>
-        <y>20</y>
-        <width>71</width>
-        <height>20</height>
+        <x>50</x>
+        <y>50</y>
+        <width>81</width>
+        <height>21</height>
        </rect>
       </property>
       <property name="alignment">
@@ -185,10 +185,10 @@
      <widget class="QELabel" name="qelabel_26">
       <property name="geometry">
        <rect>
-        <x>130</x>
+        <x>140</x>
         <y>50</y>
-        <width>71</width>
-        <height>20</height>
+        <width>81</width>
+        <height>21</height>
        </rect>
       </property>
       <property name="alignment">
@@ -201,6 +201,128 @@
        <enum>QELabel::Fixed</enum>
       </property>
      </widget>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>80</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>% DMM</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>110</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>% VBM</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_27">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>80</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(SLIT)H_ACCEPT_RATIO_MONO</string>
+      </property>
+      <property name="notation" stdset="0">
+       <enum>QELabel::Fixed</enum>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_28">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>110</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(SLIT)H_ACCEPT_RATIO_VBM</string>
+      </property>
+      <property name="notation" stdset="0">
+       <enum>QELabel::Fixed</enum>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_29">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>80</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(SLIT)V_ACCEPT_RATIO_MONO</string>
+      </property>
+      <property name="notation" stdset="0">
+       <enum>QELabel::Fixed</enum>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_30">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>110</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(SLIT)V_ACCEPT_RATIO_VBM</string>
+      </property>
+      <property name="notation" stdset="0">
+       <enum>QELabel::Fixed</enum>
+      </property>
+     </widget>
+     <zorder>label_15</zorder>
+     <zorder>label_11</zorder>
+     <zorder>label_10</zorder>
+     <zorder>qelabel_21</zorder>
+     <zorder>label_12</zorder>
+     <zorder>qelabel_22</zorder>
+     <zorder>qelabel_25</zorder>
+     <zorder>qelabel_26</zorder>
+     <zorder>label_16</zorder>
+     <zorder>label_17</zorder>
+     <zorder>qelabel_27</zorder>
+     <zorder>qelabel_28</zorder>
+     <zorder>qelabel_29</zorder>
+     <zorder>qelabel_30</zorder>
     </widget>
    </item>
   </layout>

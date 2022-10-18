@@ -102,8 +102,8 @@
        <rect>
         <x>10</x>
         <y>550</y>
-        <width>221</width>
-        <height>371</height>
+        <width>241</width>
+        <height>381</height>
        </rect>
       </property>
       <property name="title">
@@ -145,9 +145,9 @@
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>260</y>
-         <width>201</width>
-         <height>71</height>
+         <y>240</y>
+         <width>221</width>
+         <height>131</height>
         </rect>
        </property>
        <property name="uiFile" stdset="0">
@@ -160,9 +160,9 @@
       <widget class="VCLNavigatePushButton" name="vclnavigatepushbutton">
        <property name="geometry">
         <rect>
-         <x>10</x>
-         <y>340</y>
-         <width>121</width>
+         <x>120</x>
+         <y>200</y>
+         <width>111</width>
          <height>25</height>
         </rect>
        </property>
@@ -182,7 +182,7 @@
          <x>10</x>
          <y>190</y>
          <width>101</width>
-         <height>71</height>
+         <height>51</height>
         </rect>
        </property>
        <property name="displayAlarmStateOption" stdset="0">
@@ -217,7 +217,7 @@
      <widget class="QGroupBox" name="groupBox_2">
       <property name="geometry">
        <rect>
-        <x>410</x>
+        <x>430</x>
         <y>550</y>
         <width>120</width>
         <height>271</height>
@@ -283,7 +283,7 @@
      <widget class="QGroupBox" name="groupBox_3">
       <property name="geometry">
        <rect>
-        <x>240</x>
+        <x>260</x>
         <y>550</y>
         <width>161</width>
         <height>81</height>
@@ -357,7 +357,7 @@
      <widget class="QGroupBox" name="groupBox_4">
       <property name="geometry">
        <rect>
-        <x>540</x>
+        <x>560</x>
         <y>550</y>
         <width>161</width>
         <height>51</height>
@@ -427,7 +427,7 @@
      <widget class="QGroupBox" name="groupBox_5">
       <property name="geometry">
        <rect>
-        <x>720</x>
+        <x>740</x>
         <y>550</y>
         <width>121</width>
         <height>271</height>
