@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>632</width>
+    <height>280</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QFrame" name="mainFormFrame">
+     <property name="minimumSize">
+      <size>
+       <width>632</width>
+       <height>200</height>
+      </size>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QEForm" name="qeform">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>590</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="uiFile" stdset="0">
+       <string>opcua_beamline_shutters.ui</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>COMP=MCTBLSH01SHT01</string>
+      </property>
+     </widget>
+     <widget class="QEForm" name="qeform_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>590</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="uiFile" stdset="0">
+       <string>opcua_tes_summary_item.ui</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>COMP=MCTBLSH01TES01</string>
+      </property>
+     </widget>
+     <widget class="QEForm" name="qeform_3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>70</y>
+        <width>590</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="uiFile" stdset="0">
+       <string>opcua_tes_summary_item.ui</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>COMP=MCTBLSH01TES02</string>
+      </property>
+     </widget>
+     <widget class="QEForm" name="qeform_4">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>100</y>
+        <width>590</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="uiFile" stdset="0">
+       <string>opcua_flm_summary_item.ui</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>COMP=MCTBLSH01FLM01</string>
+      </property>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QEForm</class>
+   <extends>QWidget</extends>
+   <header>QEForm.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>831</width>
+    <height>414</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="VCLStartPushButton" name="vclstartpushbutton">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>380</y>
+     <width>201</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Push Settings to Scan Record</string>
+   </property>
+   <property name="variable" stdset="0">
+    <string>MCTCFG01:MONO01_OPT_SCAN_PARMS.LOAD</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>20</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Positioner Setpoint:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>60</y>
+     <width>141</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Positioner Readback:</string>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>20</y>
+     <width>300</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>MCTCFG01:MONO01_OPT_SCAN_PARMS.PPV</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>20</y>
+     <width>300</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>MCTCFG01:MONO01_OPT_SCAN_PARMS.PPV</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_2">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>60</y>
+     <width>300</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>MCTCFG01:MONO01_OPT_SCAN_PARMS.RPV</string>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit_2">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>60</y>
+     <width>300</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>MCTCFG01:MONO01_OPT_SCAN_PARMS.RPV</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>100</y>
+     <width>141</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Detector Readback:</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_3">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>100</y>
+     <width>300</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>MCTCFG01:MONO01_OPT_SCAN_PARMS.DPV</string>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit_3">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>100</y>
+     <width>300</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>MCTTBL01DAQ01:SumAll:MeanValue_RBV</string>
+   </property>
+   <property name="variable" stdset="0">
+    <string>MCTCFG01:MONO01_OPT_SCAN_PARMS.DPV</string>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit_4">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>140</y>
+     <width>300</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>41</string>
+   </property>
+   <property name="variable" stdset="0">
+    <string>MCTCFG01:MONO01_OPT_SCAN_PARMS.NP</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>140</y>
+     <width>141</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Points to Scan:</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_4">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>140</y>
+     <width>300</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>MCTCFG01:MONO01_OPT_SCAN_PARMS.NP</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_5">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>180</y>
+     <width>300</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>MCTCFG01:MONO01_OPT_SCAN_PARMS.AR</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>180</y>
+     <width>141</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Scan Mode:</string>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit_6">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>220</y>
+     <width>300</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>-0.100000</string>
+   </property>
+   <property name="variable" stdset="0">
+    <string>MCTCFG01:MONO01_OPT_SCAN_PARMS.SP</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_6">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>220</y>
+     <width>300</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>MCTCFG01:MONO01_OPT_SCAN_PARMS.SP</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>220</y>
+     <width>141</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Start Position:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>260</y>
+     <width>141</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>End Position:</string>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit_7">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>260</y>
+     <width>300</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0.100000</string>
+   </property>
+   <property name="variable" stdset="0">
+    <string>MCTCFG01:MONO01_OPT_SCAN_PARMS.EP</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_7">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>260</y>
+     <width>300</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>MCTCFG01:MONO01_OPT_SCAN_PARMS.EP</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>340</y>
+     <width>141</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>After Scan Move:</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_8">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>340</y>
+     <width>300</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>MCTCFG01:MONO01_OPT_SCAN_PARMS.AFT</string>
+   </property>
+  </widget>
+  <widget class="QEComboBox" name="qecombobox">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>340</y>
+     <width>300</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>MCTCFG01:MONO01_OPT_SCAN_PARMS.AFT</string>
+   </property>
+  </widget>
+  <widget class="QEComboBox" name="qecombobox_2">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>180</y>
+     <width>300</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>MCTCFG01:MONO01_OPT_SCAN_PARMS.AR</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>300</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Positioner Settling Time</string>
+   </property>
+  </widget>
+  <widget class="QELineEdit" name="qelineedit_8">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>300</y>
+     <width>300</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0.100</string>
+   </property>
+   <property name="variable" stdset="0">
+    <string>MCTCFG01:MONO01_OPT_SCAN.PDLY</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_9">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>300</y>
+     <width>300</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>MCTCFG01:MONO01_OPT_SCAN.PDLY</string>
+   </property>
+  </widget>
+  <widget class="QEPushButton" name="qepushbutton">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>380</y>
+     <width>161</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Configure 2nd Positioner</string>
+   </property>
+   <property name="variable" stdset="0">
+    <string/>
+   </property>
+   <property name="guiFile" stdset="0">
+    <string>MCT_opt_scan_parm2.ui</string>
+   </property>
+   <property name="creationOption" stdset="0">
+    <enum>QEPushButton::NewWindow</enum>
+   </property>
+  </widget>
+  <widget class="VCLStartPushButton" name="vclstartpushbutton_2">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>380</y>
+     <width>161</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Restore Default Settings</string>
+   </property>
+   <property name="variable" stdset="0">
+    <string>MCTCFG01:MONO01_OPT_SCAN_PARMS_DFT.PROC</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 170, 0);</string>
+   </property>
+  </widget>
+  <widget class="VCLNavigatePushButton" name="vclnavigatepushbutton">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>380</y>
+     <width>131</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>sscan Record Detail</string>
+   </property>
+   <property name="variable" stdset="0">
+    <string/>
+   </property>
+   <property name="variableSubstitutions" stdset="0">
+    <string>P=MCTCFG01,S=MONO01_OPT_SCAN</string>
+   </property>
+   <property name="guiFile" stdset="0">
+    <string>scan_full.ui</string>
+   </property>
+   <property name="creationOption" stdset="0">
+    <enum>QEPushButton::NewWindow</enum>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QEComboBox</class>
+   <extends>QComboBox</extends>
+   <header>QEComboBox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>QELineEdit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEPushButton</class>
+   <extends>QPushButton</extends>
+   <header>QEPushButton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>VCLNavigatePushButton</class>
+   <extends>QEPushButton</extends>
+   <header>VCLNavigatePushButton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>VCLStartPushButton</class>
+   <extends>QEPushButton</extends>
+   <header>VCLStartPushButton.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

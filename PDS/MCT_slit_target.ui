@@ -1,0 +1,1183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1171</width>
+    <height>230</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Slit targets</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>1171</width>
+       <height>221</height>
+      </size>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="lineWidth">
+      <number>0</number>
+     </property>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>0</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Mono beam (no VBM)</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_15">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>30</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(SLIT)HSIZE_CALC1</string>
+      </property>
+      <property name="notation" stdset="0">
+       <enum>QELabel::Fixed</enum>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_21">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>80</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(SLIT)HCENTRE_CALC1</string>
+      </property>
+      <property name="notation" stdset="0">
+       <enum>QELabel::Fixed</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>0</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>White beam</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>0</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Mono beam (with VBM)</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_22">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>130</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(SLIT)VSIZE_CALC1</string>
+      </property>
+      <property name="notation" stdset="0">
+       <enum>QELabel::Fixed</enum>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_23">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>180</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(SLIT)VCENTRE_CALC1</string>
+      </property>
+      <property name="notation" stdset="0">
+       <enum>QELabel::Fixed</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>0</y>
+        <width>71</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Pink beam</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>30</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>H Size</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>80</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>H Ctr</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>130</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>V Size</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>180</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>V Ctr</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_16">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>30</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(SLIT)HSIZE_CALC2</string>
+      </property>
+      <property name="notation" stdset="0">
+       <enum>QELabel::Fixed</enum>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_17">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>30</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(SLIT)HSIZE_CALC3</string>
+      </property>
+      <property name="notation" stdset="0">
+       <enum>QELabel::Fixed</enum>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_18">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>30</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(SLIT)HSIZE_CALC4</string>
+      </property>
+      <property name="notation" stdset="0">
+       <enum>QELabel::Fixed</enum>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_24">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>80</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(SLIT)HCENTRE_CALC2</string>
+      </property>
+      <property name="notation" stdset="0">
+       <enum>QELabel::Fixed</enum>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_25">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>80</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(SLIT)HCENTRE_CALC3</string>
+      </property>
+      <property name="notation" stdset="0">
+       <enum>QELabel::Fixed</enum>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_26">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>80</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(SLIT)HCENTRE_CALC4</string>
+      </property>
+      <property name="notation" stdset="0">
+       <enum>QELabel::Fixed</enum>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_27">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>130</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(SLIT)VSIZE_CALC2</string>
+      </property>
+      <property name="notation" stdset="0">
+       <enum>QELabel::Fixed</enum>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_28">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>130</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(SLIT)VSIZE_CALC3</string>
+      </property>
+      <property name="notation" stdset="0">
+       <enum>QELabel::Fixed</enum>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_29">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>130</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(SLIT)VSIZE_CALC4</string>
+      </property>
+      <property name="notation" stdset="0">
+       <enum>QELabel::Fixed</enum>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_30">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>180</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(SLIT)VCENTRE_CALC2</string>
+      </property>
+      <property name="notation" stdset="0">
+       <enum>QELabel::Fixed</enum>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_31">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>180</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(SLIT)VCENTRE_CALC3</string>
+      </property>
+      <property name="notation" stdset="0">
+       <enum>QELabel::Fixed</enum>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_32">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>180</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(SLIT)VCENTRE_CALC4</string>
+      </property>
+      <property name="notation" stdset="0">
+       <enum>QELabel::Fixed</enum>
+      </property>
+     </widget>
+     <widget class="QEForm" name="qeform_12">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>20</y>
+        <width>571</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="userLevelVisibility" stdset="0">
+       <enum>QEAbstractWidget::User</enum>
+      </property>
+      <property name="userLevelEnabled" stdset="0">
+       <enum>QEAbstractWidget::User</enum>
+      </property>
+      <property name="uiFile" stdset="0">
+       <string>ppmac1motor_sl.ui</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>MOTOR=$(SLIT)HSIZE</string>
+      </property>
+     </widget>
+     <widget class="QEForm" name="qeform_13">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>70</y>
+        <width>571</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="userLevelVisibility" stdset="0">
+       <enum>QEAbstractWidget::User</enum>
+      </property>
+      <property name="userLevelEnabled" stdset="0">
+       <enum>QEAbstractWidget::User</enum>
+      </property>
+      <property name="uiFile" stdset="0">
+       <string>ppmac1motor_sl.ui</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>MOTOR=$(SLIT)HCENTRE</string>
+      </property>
+     </widget>
+     <widget class="QEForm" name="qeform_14">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>120</y>
+        <width>571</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="userLevelVisibility" stdset="0">
+       <enum>QEAbstractWidget::User</enum>
+      </property>
+      <property name="userLevelEnabled" stdset="0">
+       <enum>QEAbstractWidget::User</enum>
+      </property>
+      <property name="uiFile" stdset="0">
+       <string>ppmac1motor_sl.ui</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>MOTOR=$(SLIT)VSIZE</string>
+      </property>
+     </widget>
+     <widget class="QEForm" name="qeform_15">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>170</y>
+        <width>571</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="userLevelVisibility" stdset="0">
+       <enum>QEAbstractWidget::User</enum>
+      </property>
+      <property name="userLevelEnabled" stdset="0">
+       <enum>QEAbstractWidget::User</enum>
+      </property>
+      <property name="uiFile" stdset="0">
+       <string>ppmac1motor_sl.ui</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string>MOTOR=$(SLIT)VCENTRE</string>
+      </property>
+     </widget>
+     <widget class="QEShape" name="qeshape">
+      <property name="geometry">
+       <rect>
+        <x>45</x>
+        <y>0</y>
+        <width>91</width>
+        <height>211</height>
+       </rect>
+      </property>
+      <property name="point2" stdset="0">
+       <point>
+        <x>90</x>
+        <y>205</y>
+       </point>
+      </property>
+      <property name="color5" stdset="0">
+       <color>
+        <red>0</red>
+        <green>170</green>
+        <blue>255</blue>
+       </color>
+      </property>
+      <property name="fill">
+       <bool>false</bool>
+      </property>
+      <property name="lineWidth">
+       <UInt>2</UInt>
+      </property>
+     </widget>
+     <widget class="QELink" name="qelink">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>210</y>
+        <width>81</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="condition" stdset="0">
+       <enum>QELink::Equal</enum>
+      </property>
+      <property name="comparisonValue">
+       <string>0</string>
+      </property>
+      <property name="outTrueValue">
+       <string>1</string>
+      </property>
+      <property name="outFalseValue">
+       <string>0</string>
+      </property>
+      <property name="runVisible">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_33">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>0</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>MCT:MODE_STS</string>
+      </property>
+      <property name="precision">
+       <number>11</number>
+      </property>
+      <property name="notation" stdset="0">
+       <enum>QELabel::Automatic</enum>
+      </property>
+     </widget>
+     <widget class="QEShape" name="qeshape_2">
+      <property name="geometry">
+       <rect>
+        <x>145</x>
+        <y>0</y>
+        <width>91</width>
+        <height>211</height>
+       </rect>
+      </property>
+      <property name="point2" stdset="0">
+       <point>
+        <x>90</x>
+        <y>205</y>
+       </point>
+      </property>
+      <property name="color5" stdset="0">
+       <color>
+        <red>0</red>
+        <green>170</green>
+        <blue>255</blue>
+       </color>
+      </property>
+      <property name="fill">
+       <bool>false</bool>
+      </property>
+      <property name="lineWidth">
+       <UInt>2</UInt>
+      </property>
+     </widget>
+     <widget class="QEShape" name="qeshape_3">
+      <property name="geometry">
+       <rect>
+        <x>245</x>
+        <y>0</y>
+        <width>91</width>
+        <height>211</height>
+       </rect>
+      </property>
+      <property name="point2" stdset="0">
+       <point>
+        <x>90</x>
+        <y>205</y>
+       </point>
+      </property>
+      <property name="color5" stdset="0">
+       <color>
+        <red>0</red>
+        <green>170</green>
+        <blue>255</blue>
+       </color>
+      </property>
+      <property name="fill">
+       <bool>false</bool>
+      </property>
+      <property name="lineWidth">
+       <UInt>2</UInt>
+      </property>
+     </widget>
+     <widget class="QEShape" name="qeshape_4">
+      <property name="geometry">
+       <rect>
+        <x>345</x>
+        <y>0</y>
+        <width>91</width>
+        <height>211</height>
+       </rect>
+      </property>
+      <property name="point2" stdset="0">
+       <point>
+        <x>90</x>
+        <y>205</y>
+       </point>
+      </property>
+      <property name="color5" stdset="0">
+       <color>
+        <red>0</red>
+        <green>170</green>
+        <blue>255</blue>
+       </color>
+      </property>
+      <property name="fill">
+       <bool>false</bool>
+      </property>
+      <property name="lineWidth">
+       <UInt>2</UInt>
+      </property>
+     </widget>
+     <widget class="QELink" name="qelink_2">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>210</y>
+        <width>81</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="condition" stdset="0">
+       <enum>QELink::Equal</enum>
+      </property>
+      <property name="comparisonValue">
+       <string>1</string>
+      </property>
+      <property name="outTrueValue">
+       <string>1</string>
+      </property>
+      <property name="outFalseValue">
+       <string>0</string>
+      </property>
+      <property name="runVisible">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QELink" name="qelink_3">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>210</y>
+        <width>81</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="condition" stdset="0">
+       <enum>QELink::Equal</enum>
+      </property>
+      <property name="comparisonValue">
+       <string>2</string>
+      </property>
+      <property name="outTrueValue">
+       <string>1</string>
+      </property>
+      <property name="outFalseValue">
+       <string>0</string>
+      </property>
+      <property name="runVisible">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QELink" name="qelink_4">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>210</y>
+        <width>81</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="condition" stdset="0">
+       <enum>QELink::Equal</enum>
+      </property>
+      <property name="comparisonValue">
+       <string>3</string>
+      </property>
+      <property name="outTrueValue">
+       <string>1</string>
+      </property>
+      <property name="outFalseValue">
+       <string>0</string>
+      </property>
+      <property name="runVisible">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>0</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Beamline mode</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QERadioGroup" name="qeradiogroup">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>60</y>
+        <width>101</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="displayAlarmStateOption" stdset="0">
+       <enum>QEAbstractWidget::Never</enum>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(SLIT)OP_MODE</string>
+      </property>
+      <property name="variableSubstitutions" stdset="0">
+       <string/>
+      </property>
+      <property name="elementsRequired">
+       <number>0</number>
+      </property>
+      <property name="title" stdset="0">
+       <string> Move Mode </string>
+      </property>
+      <property name="columns">
+       <number>1</number>
+      </property>
+      <property name="buttonStyle">
+       <enum>QRadioGroup::Radio</enum>
+      </property>
+      <property name="buttonOrder">
+       <enum>QRadioGroup::colMajor</enum>
+      </property>
+     </widget>
+     <widget class="VCLStartPushButton" name="vclstartpushbutton_2">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>160</y>
+        <width>101</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Move All</string>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(SLIT)ALL_MOVE.PROC</string>
+      </property>
+     </widget>
+     <widget class="VCLStartPushButton" name="vclstartpushbutton_3">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>30</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Move</string>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(SLIT)HSIZE_MOVE.PROC</string>
+      </property>
+     </widget>
+     <widget class="VCLStartPushButton" name="vclstartpushbutton_4">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>80</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Move</string>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(SLIT)HCENTRE_MOVE.PROC</string>
+      </property>
+     </widget>
+     <widget class="VCLStartPushButton" name="vclstartpushbutton_5">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>130</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Move</string>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(SLIT)VSIZE_MOVE.PROC</string>
+      </property>
+     </widget>
+     <widget class="VCLStartPushButton" name="vclstartpushbutton_6">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>180</y>
+        <width>41</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Move</string>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(SLIT)VCENTRE_MOVE.PROC</string>
+      </property>
+     </widget>
+     <zorder>label_12</zorder>
+     <zorder>qeshape_4</zorder>
+     <zorder>label_10</zorder>
+     <zorder>qeshape_3</zorder>
+     <zorder>label_13</zorder>
+     <zorder>label_11</zorder>
+     <zorder>label_17</zorder>
+     <zorder>label_16</zorder>
+     <zorder>label_15</zorder>
+     <zorder>label_14</zorder>
+     <zorder>qeshape_2</zorder>
+     <zorder>qeshape</zorder>
+     <zorder>qelabel_15</zorder>
+     <zorder>qelabel_21</zorder>
+     <zorder>qelabel_22</zorder>
+     <zorder>qelabel_23</zorder>
+     <zorder>qelabel_16</zorder>
+     <zorder>qelabel_17</zorder>
+     <zorder>qelabel_18</zorder>
+     <zorder>qelabel_24</zorder>
+     <zorder>qelabel_25</zorder>
+     <zorder>qelabel_26</zorder>
+     <zorder>qelabel_27</zorder>
+     <zorder>qelabel_28</zorder>
+     <zorder>qelabel_29</zorder>
+     <zorder>qelabel_30</zorder>
+     <zorder>qelabel_31</zorder>
+     <zorder>qelabel_32</zorder>
+     <zorder>qeform_12</zorder>
+     <zorder>qeform_13</zorder>
+     <zorder>qeform_14</zorder>
+     <zorder>qeform_15</zorder>
+     <zorder>qelink</zorder>
+     <zorder>qelabel_33</zorder>
+     <zorder>qelink_2</zorder>
+     <zorder>qelink_3</zorder>
+     <zorder>qelink_4</zorder>
+     <zorder>label_18</zorder>
+     <zorder>qeradiogroup</zorder>
+     <zorder>vclstartpushbutton_2</zorder>
+     <zorder>vclstartpushbutton_3</zorder>
+     <zorder>vclstartpushbutton_4</zorder>
+     <zorder>vclstartpushbutton_5</zorder>
+     <zorder>vclstartpushbutton_6</zorder>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QEForm</class>
+   <extends>QWidget</extends>
+   <header>QEForm.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEPushButton</class>
+   <extends>QPushButton</extends>
+   <header>QEPushButton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QERadioGroup</class>
+   <extends>QWidget</extends>
+   <header>QERadioGroup.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEShape</class>
+   <extends>QWidget</extends>
+   <header>QEShape.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELink</class>
+   <extends>QLabel</extends>
+   <header>QELink.h</header>
+  </customwidget>
+  <customwidget>
+   <class>VCLStartPushButton</class>
+   <extends>QEPushButton</extends>
+   <header>VCLStartPushButton.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>qelabel_33</sender>
+   <signal>dbValueChanged(int)</signal>
+   <receiver>qelink</receiver>
+   <slot>in(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>505</x>
+     <y>16</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>190</x>
+     <y>225</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>qelink</sender>
+   <signal>out(bool)</signal>
+   <receiver>qeshape</receiver>
+   <slot>setManagedVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>190</x>
+     <y>225</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>190</x>
+     <y>112</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>qelabel_33</sender>
+   <signal>dbValueChanged(int)</signal>
+   <receiver>qelink_2</receiver>
+   <slot>in(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>505</x>
+     <y>16</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>190</x>
+     <y>225</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>qelabel_33</sender>
+   <signal>dbValueChanged(int)</signal>
+   <receiver>qelink_3</receiver>
+   <slot>in(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>505</x>
+     <y>16</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>290</x>
+     <y>225</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>qelabel_33</sender>
+   <signal>dbValueChanged(int)</signal>
+   <receiver>qelink_4</receiver>
+   <slot>in(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>505</x>
+     <y>16</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>390</x>
+     <y>225</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>qelink_2</sender>
+   <signal>out(bool)</signal>
+   <receiver>qeshape_2</receiver>
+   <slot>setManagedVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>190</x>
+     <y>225</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>190</x>
+     <y>112</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>qelink_3</sender>
+   <signal>out(bool)</signal>
+   <receiver>qeshape_3</receiver>
+   <slot>setManagedVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>290</x>
+     <y>225</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>290</x>
+     <y>112</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>qelink_4</sender>
+   <signal>out(bool)</signal>
+   <receiver>qeshape_4</receiver>
+   <slot>setManagedVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>390</x>
+     <y>225</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>390</x>
+     <y>112</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

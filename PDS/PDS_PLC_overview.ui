@@ -1,0 +1,1636 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1287</width>
+    <height>845</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="minimumSize">
+      <size>
+       <width>1269</width>
+       <height>827</height>
+      </size>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1269</width>
+        <height>827</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab_7">
+       <attribute name="title">
+        <string>EPS</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QEForm" name="qeform_90">
+          <property name="maximumSize">
+           <size>
+            <width>661</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="uiFile" stdset="0">
+           <string>opcua_eps_plc_summary_item.ui</string>
+          </property>
+          <property name="variableSubstitutions" stdset="0">
+           <string>PLC=MCTEPSC01</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTabWidget" name="tabWidget_3">
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="tab_8">
+           <attribute name="title">
+            <string>IGVs</string>
+           </attribute>
+           <widget class="QEForm" name="qeform_91">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>10</y>
+              <width>321</width>
+              <height>241</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_gate_valve_shutter_details.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTPDS01IGV01</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_92">
+            <property name="geometry">
+             <rect>
+              <x>330</x>
+              <y>10</y>
+              <width>321</width>
+              <height>241</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_gate_valve_shutter_details.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTPDS01IGV02</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_93">
+            <property name="geometry">
+             <rect>
+              <x>660</x>
+              <y>10</y>
+              <width>321</width>
+              <height>241</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_gate_valve_shutter_details.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTPDS01IGV03</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="tab_9">
+           <attribute name="title">
+            <string>Flows</string>
+           </attribute>
+           <widget class="QEForm" name="qeform_94">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>10</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_flm_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTSLT01FLM01</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_95">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>50</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_flm_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTPDS01FLM01</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_96">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>90</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_flm_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTPDS01FLM02</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_97">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>130</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_flm_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTPDS01FLM03</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_98">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>170</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_flm_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTBLSH01FLM01</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_99">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>210</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_flm_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTMONO01FLM01</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_100">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>250</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_flm_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTVBM01FLM01</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_101">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>290</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_flm_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTMSK01FLM01</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_102">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>330</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_flm_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTBEW01FLM01</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_103">
+            <property name="geometry">
+             <rect>
+              <x>420</x>
+              <y>10</y>
+              <width>481</width>
+              <height>291</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_chiller_status_details.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTMONO01CHL01</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_104">
+            <property name="geometry">
+             <rect>
+              <x>420</x>
+              <y>302</y>
+              <width>481</width>
+              <height>291</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_chiller_status_details.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTVBM01CHL01</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="tab_10">
+           <attribute name="title">
+            <string>Temperature</string>
+           </attribute>
+           <widget class="QEForm" name="qeform_105">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>10</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTVBM01TES02</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_106">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>50</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTFOIL01TES01</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_107">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>90</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTFLT02TES01</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_108">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>130</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTFLT04TES01</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_109">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>170</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTFLT05TES01</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_110">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>210</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTSLT03TES02</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_111">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>250</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTSLT03TES03</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_112">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>290</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTSLT03TES04</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_113">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>330</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTMONO01TES02</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_114">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>370</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTMONO01TES03</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_115">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>410</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTMONO01TES04</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_116">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>450</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTMONO01TES05</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_117">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>490</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTMONO01TES06</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_118">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>530</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTMONO01TES07</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_119">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>570</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTMONO01TES08</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_120">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>610</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTMONO01TES13</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_121">
+            <property name="geometry">
+             <rect>
+              <x>420</x>
+              <y>490</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTMONO01TES14</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_122">
+            <property name="geometry">
+             <rect>
+              <x>420</x>
+              <y>10</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTMONO01TES01</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_123">
+            <property name="geometry">
+             <rect>
+              <x>420</x>
+              <y>170</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTVBM01TES01</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_124">
+            <property name="geometry">
+             <rect>
+              <x>420</x>
+              <y>90</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTFLT01TES01</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_125">
+            <property name="geometry">
+             <rect>
+              <x>420</x>
+              <y>370</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTSLT02TES01</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_126">
+            <property name="geometry">
+             <rect>
+              <x>420</x>
+              <y>290</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTSLT02TES02</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_127">
+            <property name="geometry">
+             <rect>
+              <x>420</x>
+              <y>410</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTSLT02TES03</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_128">
+            <property name="geometry">
+             <rect>
+              <x>420</x>
+              <y>570</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTSLT02TES04</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_129">
+            <property name="geometry">
+             <rect>
+              <x>420</x>
+              <y>210</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTMSK01TES01</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_130">
+            <property name="geometry">
+             <rect>
+              <x>420</x>
+              <y>130</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTMSK01TES02</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_131">
+            <property name="geometry">
+             <rect>
+              <x>420</x>
+              <y>330</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTSLT01TES01</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_132">
+            <property name="geometry">
+             <rect>
+              <x>420</x>
+              <y>450</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTSLT01TES02</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_133">
+            <property name="geometry">
+             <rect>
+              <x>420</x>
+              <y>530</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTSLT01TES03</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_134">
+            <property name="geometry">
+             <rect>
+              <x>420</x>
+              <y>250</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTSLT01TES04</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_135">
+            <property name="geometry">
+             <rect>
+              <x>420</x>
+              <y>50</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTMONO01TES09</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_136">
+            <property name="geometry">
+             <rect>
+              <x>420</x>
+              <y>610</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTMONO01TES10</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_137">
+            <property name="geometry">
+             <rect>
+              <x>830</x>
+              <y>490</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTMONO01TES11</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_138">
+            <property name="geometry">
+             <rect>
+              <x>830</x>
+              <y>10</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTMONO01TES12</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_139">
+            <property name="geometry">
+             <rect>
+              <x>830</x>
+              <y>170</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTVBM01TES04</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_140">
+            <property name="geometry">
+             <rect>
+              <x>830</x>
+              <y>90</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTVBM01TES05</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_141">
+            <property name="geometry">
+             <rect>
+              <x>830</x>
+              <y>370</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTVBM01TES06</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_142">
+            <property name="geometry">
+             <rect>
+              <x>830</x>
+              <y>290</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTVBM01TES07</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_143">
+            <property name="geometry">
+             <rect>
+              <x>830</x>
+              <y>410</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTVBM01TES03</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_144">
+            <property name="geometry">
+             <rect>
+              <x>830</x>
+              <y>570</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTBEW01TES01</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_145">
+            <property name="geometry">
+             <rect>
+              <x>830</x>
+              <y>210</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTSLT03TES01</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_146">
+            <property name="geometry">
+             <rect>
+              <x>830</x>
+              <y>130</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTFLT03TES01</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_147">
+            <property name="geometry">
+             <rect>
+              <x>830</x>
+              <y>330</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTMONO01TES15</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_148">
+            <property name="geometry">
+             <rect>
+              <x>830</x>
+              <y>450</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTMONO01TES16</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_149">
+            <property name="geometry">
+             <rect>
+              <x>830</x>
+              <y>530</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTMONO01TES17</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_150">
+            <property name="geometry">
+             <rect>
+              <x>830</x>
+              <y>250</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTMONO01TES18</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_151">
+            <property name="geometry">
+             <rect>
+              <x>830</x>
+              <y>50</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTBLSH01TES01</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_152">
+            <property name="geometry">
+             <rect>
+              <x>830</x>
+              <y>610</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTBLSH01TES02</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_153">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>650</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTSCRN01TES01</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_154">
+            <property name="geometry">
+             <rect>
+              <x>420</x>
+              <y>650</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_tes_summary_item.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTSCRN02TES01</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="tab_11">
+           <attribute name="title">
+            <string>Vacuum Faults</string>
+           </attribute>
+           <widget class="QEForm" name="qeform_155">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>10</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_vacuum_faults_summary.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTPDS01CCG01</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_156">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>50</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_vacuum_faults_summary.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTPDS01CCG02</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_157">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>90</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_vacuum_faults_summary.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTPDS01CCG03</string>
+            </property>
+           </widget>
+           <widget class="QEForm" name="qeform_158">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>130</y>
+              <width>401</width>
+              <height>40</height>
+             </rect>
+            </property>
+            <property name="uiFile" stdset="0">
+             <string>opcua_vacuum_faults_summary.ui</string>
+            </property>
+            <property name="variableSubstitutions" stdset="0">
+             <string>COMP=MCTPDS01CCG04</string>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_12">
+       <attribute name="title">
+        <string>PSS</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_10">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>661</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>PSS PLC Status</string>
+        </property>
+        <widget class="QEForm" name="qeform_159">
+         <property name="geometry">
+          <rect>
+           <x>7</x>
+           <y>13</y>
+           <width>641</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="uiFile" stdset="0">
+          <string>opcua_eps_plc_summary_item.ui</string>
+         </property>
+         <property name="variableSubstitutions" stdset="0">
+          <string>PLC=MCTPSSC01</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_11">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>661</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Beamline PSS Status</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_5">
+         <item>
+          <widget class="QEForm" name="qeform_160">
+           <property name="uiFile" stdset="0">
+            <string>opcua_beamline_pss_status.ui</string>
+           </property>
+           <property name="variableSubstitutions" stdset="0">
+            <string>COMP=MCTPSS01</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_12">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>140</y>
+          <width>661</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Search Buttons</string>
+        </property>
+        <widget class="QEForm" name="qeform_161">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>321</width>
+           <height>40</height>
+          </rect>
+         </property>
+         <property name="uiFile" stdset="0">
+          <string>opcua_search_button_status.ui</string>
+         </property>
+         <property name="variableSubstitutions" stdset="0">
+          <string>COMP=MCTSZ01SB01</string>
+         </property>
+        </widget>
+        <widget class="QEForm" name="qeform_162">
+         <property name="geometry">
+          <rect>
+           <x>330</x>
+           <y>20</y>
+           <width>321</width>
+           <height>40</height>
+          </rect>
+         </property>
+         <property name="uiFile" stdset="0">
+          <string>opcua_search_button_status.ui</string>
+         </property>
+         <property name="variableSubstitutions" stdset="0">
+          <string>COMP=MCTSZ01SB02</string>
+         </property>
+        </widget>
+        <widget class="QEForm" name="qeform_163">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>60</y>
+           <width>321</width>
+           <height>40</height>
+          </rect>
+         </property>
+         <property name="uiFile" stdset="0">
+          <string>opcua_search_button_status.ui</string>
+         </property>
+         <property name="variableSubstitutions" stdset="0">
+          <string>COMP=MCTSZ01SB03</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_13">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>260</y>
+          <width>661</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>E-Stops</string>
+        </property>
+        <widget class="QEForm" name="qeform_164">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>321</width>
+           <height>40</height>
+          </rect>
+         </property>
+         <property name="uiFile" stdset="0">
+          <string>opcua_e-stop_status.ui</string>
+         </property>
+         <property name="variableSubstitutions" stdset="0">
+          <string>COMP=MCTSZ01ES01</string>
+         </property>
+        </widget>
+        <widget class="QEForm" name="qeform_165">
+         <property name="geometry">
+          <rect>
+           <x>330</x>
+           <y>20</y>
+           <width>321</width>
+           <height>40</height>
+          </rect>
+         </property>
+         <property name="uiFile" stdset="0">
+          <string>opcua_e-stop_status.ui</string>
+         </property>
+         <property name="variableSubstitutions" stdset="0">
+          <string>COMP=MCTSZ01ES02</string>
+         </property>
+        </widget>
+        <widget class="QEForm" name="qeform_166">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>60</y>
+           <width>321</width>
+           <height>40</height>
+          </rect>
+         </property>
+         <property name="uiFile" stdset="0">
+          <string>opcua_e-stop_status.ui</string>
+         </property>
+         <property name="variableSubstitutions" stdset="0">
+          <string>COMP=MCTSZ01ES03</string>
+         </property>
+        </widget>
+        <widget class="QEForm" name="qeform_167">
+         <property name="geometry">
+          <rect>
+           <x>330</x>
+           <y>60</y>
+           <width>321</width>
+           <height>40</height>
+          </rect>
+         </property>
+         <property name="uiFile" stdset="0">
+          <string>opcua_e-stop_status.ui</string>
+         </property>
+         <property name="variableSubstitutions" stdset="0">
+          <string>COMP=MCTSZ01ES04</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_14">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>380</y>
+          <width>661</width>
+          <height>151</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Doors</string>
+        </property>
+        <widget class="QEForm" name="qeform_168">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>321</width>
+           <height>40</height>
+          </rect>
+         </property>
+         <property name="uiFile" stdset="0">
+          <string>opcua_door_lock_status.ui</string>
+         </property>
+         <property name="variableSubstitutions" stdset="0">
+          <string>COMP=MCTSZ01EDL01</string>
+         </property>
+        </widget>
+        <widget class="QEForm" name="qeform_169">
+         <property name="geometry">
+          <rect>
+           <x>330</x>
+           <y>20</y>
+           <width>321</width>
+           <height>40</height>
+          </rect>
+         </property>
+         <property name="uiFile" stdset="0">
+          <string>opcua_door_lock_status.ui</string>
+         </property>
+         <property name="variableSubstitutions" stdset="0">
+          <string>COMP=MCTSZ01EDL02</string>
+         </property>
+        </widget>
+        <widget class="QEForm" name="qeform_170">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>100</y>
+           <width>321</width>
+           <height>40</height>
+          </rect>
+         </property>
+         <property name="uiFile" stdset="0">
+          <string>opcua_unlock_button.ui</string>
+         </property>
+         <property name="variableSubstitutions" stdset="0">
+          <string>COMP=MCTSZ01UB01</string>
+         </property>
+        </widget>
+        <widget class="QEForm" name="qeform_171">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>60</y>
+           <width>321</width>
+           <height>40</height>
+          </rect>
+         </property>
+         <property name="uiFile" stdset="0">
+          <string>opcua_door_switch_status.ui</string>
+         </property>
+         <property name="variableSubstitutions" stdset="0">
+          <string>COMP=MCTSZ01DSW01</string>
+         </property>
+        </widget>
+        <widget class="QEForm" name="qeform_172">
+         <property name="geometry">
+          <rect>
+           <x>330</x>
+           <y>60</y>
+           <width>321</width>
+           <height>40</height>
+          </rect>
+         </property>
+         <property name="uiFile" stdset="0">
+          <string>opcua_door_switch_status.ui</string>
+         </property>
+         <property name="variableSubstitutions" stdset="0">
+          <string>COMP=MCTSZ01DSW02</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_15">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>660</y>
+          <width>661</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>PSS Shutter</string>
+        </property>
+        <widget class="QEForm" name="qeform_173">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>641</width>
+           <height>40</height>
+          </rect>
+         </property>
+         <property name="uiFile" stdset="0">
+          <string>opcua_pss_shutter.ui</string>
+         </property>
+         <property name="variableSubstitutions" stdset="0">
+          <string>COMP=SR09FE02SHT01</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_16">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>540</y>
+          <width>661</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Lights</string>
+        </property>
+        <widget class="QEForm" name="qeform_174">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>321</width>
+           <height>40</height>
+          </rect>
+         </property>
+         <property name="uiFile" stdset="0">
+          <string>opcua_stack_light.ui</string>
+         </property>
+         <property name="variableSubstitutions" stdset="0">
+          <string>COMP=MCTSZ01SL01</string>
+         </property>
+        </widget>
+        <widget class="QEForm" name="qeform_175">
+         <property name="geometry">
+          <rect>
+           <x>330</x>
+           <y>20</y>
+           <width>321</width>
+           <height>40</height>
+          </rect>
+         </property>
+         <property name="uiFile" stdset="0">
+          <string>opcua_strobe_light.ui</string>
+         </property>
+         <property name="variableSubstitutions" stdset="0">
+          <string>COMP=MCTSZ01STR01</string>
+         </property>
+        </widget>
+        <widget class="QEForm" name="qeform_176">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>60</y>
+           <width>641</width>
+           <height>40</height>
+          </rect>
+         </property>
+         <property name="uiFile" stdset="0">
+          <string>opcua_hutch_light_control.ui</string>
+         </property>
+         <property name="variableSubstitutions" stdset="0">
+          <string>COMP=MCTSZ01LGHT01</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_17">
+        <property name="geometry">
+         <rect>
+          <x>680</x>
+          <y>10</y>
+          <width>341</width>
+          <height>241</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Search Zone</string>
+        </property>
+        <widget class="QEForm" name="qeform_177">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>321</width>
+           <height>211</height>
+          </rect>
+         </property>
+         <property name="uiFile" stdset="0">
+          <string>opcua_search_zone.ui</string>
+         </property>
+         <property name="variableSubstitutions" stdset="0">
+          <string>COMP=MCTSZ01</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_18">
+        <property name="geometry">
+         <rect>
+          <x>680</x>
+          <y>260</y>
+          <width>421</width>
+          <height>191</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Beamline Shutter</string>
+        </property>
+        <widget class="QEForm" name="qeform_178">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>401</width>
+           <height>161</height>
+          </rect>
+         </property>
+         <property name="uiFile" stdset="0">
+          <string>opcua_beamline_shutter.ui</string>
+         </property>
+         <property name="variableSubstitutions" stdset="0">
+          <string>COMP=MCTBLSH01</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QEForm</class>
+   <extends>QWidget</extends>
+   <header>QEForm.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

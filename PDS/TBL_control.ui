@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>907</width>
+    <height>611</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>40</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Mono Status:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>60</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>VBM Status:</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>40</y>
+     <width>131</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>MCTMONO01:IN_SERVICE</string>
+   </property>
+  </widget>
+  <widget class="QELabel" name="qelabel_2">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>60</y>
+     <width>131</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="variable" stdset="0">
+    <string>MCTVBM01:IN_SERVICE</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>100</y>
+     <width>391</width>
+     <height>461</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Height</string>
+   </property>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>260</y>
+      <width>59</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Offset2:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>300</y>
+      <width>59</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Offset3:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>220</y>
+      <width>59</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Offset1:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>420</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Scale Factor3:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>380</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Scale Factor2:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>340</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Scale Factor1:</string>
+    </property>
+   </widget>
+   <widget class="QELineEdit" name="qelineedit">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>220</y>
+      <width>125</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):OFFSET1Y</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=MCTTBL1</string>
+    </property>
+   </widget>
+   <widget class="QELineEdit" name="qelineedit_2">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>260</y>
+      <width>125</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):OFFSET2Y</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=MCTTBL1</string>
+    </property>
+   </widget>
+   <widget class="QELineEdit" name="qelineedit_3">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>300</y>
+      <width>125</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):OFFSET3Y</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=MCTTBL1</string>
+    </property>
+   </widget>
+   <widget class="QELineEdit" name="qelineedit_4">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>340</y>
+      <width>125</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):SF1Y</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=MCTTBL1</string>
+    </property>
+   </widget>
+   <widget class="QELineEdit" name="qelineedit_5">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>380</y>
+      <width>125</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):SF2Y</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=MCTTBL1</string>
+    </property>
+   </widget>
+   <widget class="QELineEdit" name="qelineedit_6">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>420</y>
+      <width>125</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):SF3Y</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=MCTTBL1</string>
+    </property>
+   </widget>
+   <widget class="QEComboBox" name="qecombobox">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>40</y>
+      <width>121</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):OP_MODE</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=MCTTBL1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>40</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Control Mode:</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="qepushbutton">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>40</y>
+      <width>94</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>MOVE</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):MOVEH.PROC</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=MCTTBL1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>90</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Calculated Pos:</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_3">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>90</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):HEIGHT</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=MCTTBL1</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_4">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>160</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>MCTVBM01:HEIGHT.VAL</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>160</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>VBM Height:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>130</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>DMM Y2:</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_5">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>130</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>MCTMONO01MOT03.VAL</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>190</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>VBM Pitch:</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_6">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>190</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>MCTVBM01:PITCH.VAL</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>100</y>
+     <width>391</width>
+     <height>461</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Pitch</string>
+   </property>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>200</y>
+      <width>59</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Offset2:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>240</y>
+      <width>59</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Offset3:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_16">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>160</y>
+      <width>59</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Offset1:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_19">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>280</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Scale Factor:</string>
+    </property>
+   </widget>
+   <widget class="QELineEdit" name="qelineedit_7">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>160</y>
+      <width>125</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):OFFSET1P</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=MCTTBL1</string>
+    </property>
+   </widget>
+   <widget class="QELineEdit" name="qelineedit_8">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>200</y>
+      <width>125</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):OFFSET2P</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=MCTTBL1</string>
+    </property>
+   </widget>
+   <widget class="QELineEdit" name="qelineedit_9">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>240</y>
+      <width>125</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):OFFSET3P</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=MCTTBL1</string>
+    </property>
+   </widget>
+   <widget class="QELineEdit" name="qelineedit_10">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>280</y>
+      <width>125</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):SFP</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=MCTTBL1</string>
+    </property>
+   </widget>
+   <widget class="QEComboBox" name="qecombobox_2">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>40</y>
+      <width>121</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):OP_MODE</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=MCTTBL1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_20">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>40</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Control Mode:</string>
+    </property>
+   </widget>
+   <widget class="QEPushButton" name="qepushbutton_2">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>40</y>
+      <width>94</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>MOVE</string>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):MOVEP.PROC</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=MCTTBL1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_21">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>90</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Calculated Pos:</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_7">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>90</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>$(P):PITCH</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string>P=MCTTBL1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_24">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>130</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>VBM Pitch:</string>
+    </property>
+   </widget>
+   <widget class="QELabel" name="qelabel_10">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>130</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="variable" stdset="0">
+     <string>MCTVBM01:PITCH.VAL</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QEComboBox</class>
+   <extends>QComboBox</extends>
+   <header>QEComboBox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>QELineEdit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEPushButton</class>
+   <extends>QPushButton</extends>
+   <header>QEPushButton.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

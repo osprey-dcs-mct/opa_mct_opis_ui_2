@@ -1,0 +1,2146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>883</width>
+    <height>358</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MCT Configuration</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>881</width>
+     <height>351</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>true</bool>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>0</y>
+      <width>431</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Control</string>
+    </property>
+    <widget class="VCLStartPushButton" name="vclstartpushbutton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>80</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(P)CONFIG_START</string>
+     </property>
+    </widget>
+    <widget class="VCLStopPushButton" name="vclstoppushbutton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>80</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Abort</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(P)CONFIG_ABORT</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>280</y>
+       <width>131</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Sequence heartbeat</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_1">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>284</y>
+       <width>10</width>
+       <height>10</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>10</width>
+       <height>10</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>91</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="edgeWidth">
+      <number>1</number>
+     </property>
+     <property name="modulus">
+      <number>2</number>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>0</red>
+       <green>213</green>
+       <blue>255</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>0</red>
+       <green>107</green>
+       <blue>128</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(P)SEQUENCE_HEARTBEAT</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QESimpleShape::Never</enum>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>211</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Status</string>
+     </property>
+     <widget class="QELabel" name="qelabel_13">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>20</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P)CONFIG_STATUS</string>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_12">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>50</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P)ERROR_MESSAGE</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Error</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Status</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QERadioGroup" name="qeradiogroup_5">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>10</y>
+       <width>111</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QEAbstractWidget::Never</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(P)CONFIG_SEQ_MODE</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string/>
+     </property>
+     <property name="elementsRequired">
+      <number>0</number>
+     </property>
+     <property name="title" stdset="0">
+      <string>Mode</string>
+     </property>
+     <property name="columns">
+      <number>1</number>
+     </property>
+     <property name="spacing">
+      <number>1</number>
+     </property>
+     <property name="buttonStyle">
+      <enum>QRadioGroup::Radio</enum>
+     </property>
+     <property name="buttonOrder">
+      <enum>QRadioGroup::colMajor</enum>
+     </property>
+    </widget>
+    <widget class="VCLValidatePushButton" name="vclvalidatepushbutton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>80</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Continue</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(P)CONFIG_CONTINUE</string>
+     </property>
+    </widget>
+    <widget class="QELink" name="qelink_10">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>100</y>
+       <width>31</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="comparisonValue">
+      <string>1</string>
+     </property>
+     <property name="outTrueValue">
+      <string>1</string>
+     </property>
+     <property name="outFalseValue">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_3">
+     <property name="geometry">
+      <rect>
+       <x>92</x>
+       <y>86</y>
+       <width>10</width>
+       <height>10</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>10</width>
+       <height>10</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>91</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="edgeWidth">
+      <number>1</number>
+     </property>
+     <property name="modulus">
+      <number>2</number>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>168</red>
+       <green>168</green>
+       <blue>83</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>255</red>
+       <green>255</green>
+       <blue>127</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(P)CONFIG_CONTINUE_LED</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QESimpleShape::Never</enum>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_6">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>190</y>
+       <width>211</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Progress messages</string>
+     </property>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Now</string>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_15">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>20</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P)CONFIG_MESSAGE</string>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_18">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>50</y>
+        <width>141</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P)CONFIG_MESSAGE_PREV</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>41</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Prev.</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QEBitStatus" name="qebitstatus">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>20</y>
+       <width>21</width>
+       <height>241</height>
+      </rect>
+     </property>
+     <property name="numberOfBits">
+      <number>12</number>
+     </property>
+     <property name="Orientation">
+      <enum>QBitStatus::LSB_On_Top</enum>
+     </property>
+     <property name="offColour">
+      <color>
+       <red>0</red>
+       <green>100</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(P)CONFIG_STATE.RVAL</string>
+     </property>
+    </widget>
+    <widget class="QEDescriptionLabel" name="qedescriptionlabel">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>20</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(P)CONFIG_STATE.ZRST</string>
+     </property>
+    </widget>
+    <widget class="QEDescriptionLabel" name="qedescriptionlabel_2">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>40</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(P)CONFIG_STATE.ONST</string>
+     </property>
+    </widget>
+    <widget class="QEDescriptionLabel" name="qedescriptionlabel_3">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>60</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(P)CONFIG_STATE.TWST</string>
+     </property>
+    </widget>
+    <widget class="QEDescriptionLabel" name="qedescriptionlabel_4">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>80</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(P)CONFIG_STATE.THST</string>
+     </property>
+    </widget>
+    <widget class="QEDescriptionLabel" name="qedescriptionlabel_5">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>100</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(P)CONFIG_STATE.FRST</string>
+     </property>
+    </widget>
+    <widget class="QEDescriptionLabel" name="qedescriptionlabel_6">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>120</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(P)CONFIG_STATE.FVST</string>
+     </property>
+    </widget>
+    <widget class="QEDescriptionLabel" name="qedescriptionlabel_7">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>140</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(P)CONFIG_STATE.SXST</string>
+     </property>
+    </widget>
+    <widget class="QEDescriptionLabel" name="qedescriptionlabel_8">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>160</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(P)CONFIG_STATE.SVST</string>
+     </property>
+    </widget>
+    <widget class="QEDescriptionLabel" name="qedescriptionlabel_9">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>180</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(P)CONFIG_STATE.EIST</string>
+     </property>
+    </widget>
+    <widget class="QEDescriptionLabel" name="qedescriptionlabel_10">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>200</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(P)CONFIG_STATE.NIST</string>
+     </property>
+    </widget>
+    <widget class="QEDescriptionLabel" name="qedescriptionlabel_11">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>220</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(P)CONFIG_STATE.TEST</string>
+     </property>
+    </widget>
+    <widget class="QEDescriptionLabel" name="qedescriptionlabel_12">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>240</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(P)CONFIG_STATE.ELST</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_2">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>284</y>
+       <width>10</width>
+       <height>10</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>10</width>
+       <height>10</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>91</width>
+       <height>21</height>
+      </size>
+     </property>
+     <property name="edgeWidth">
+      <number>1</number>
+     </property>
+     <property name="modulus">
+      <number>2</number>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>0</red>
+       <green>255</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>255</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>MCTALL:CFG_STS</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QESimpleShape::Never</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>280</y>
+       <width>201</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Current Config Match Last Setup</string>
+     </property>
+    </widget>
+    <widget class="QEPushButton" name="qepushbutton">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>280</y>
+       <width>21</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>...</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string/>
+     </property>
+     <property name="guiFile" stdset="0">
+      <string>MCT_compare_component.ui</string>
+     </property>
+     <property name="creationOption" stdset="0">
+      <enum>QEPushButton::NewWindow</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>141</width>
+      <height>351</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Mono</string>
+    </property>
+    <widget class="QERadioGroup" name="qeradiogroup_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>121</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QEAbstractWidget::Never</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(P)MONO01_STATUS_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string/>
+     </property>
+     <property name="elementsRequired">
+      <number>0</number>
+     </property>
+     <property name="title" stdset="0">
+      <string>Select</string>
+     </property>
+     <property name="columns">
+      <number>1</number>
+     </property>
+     <property name="spacing">
+      <number>1</number>
+     </property>
+     <property name="buttonStyle">
+      <enum>QRadioGroup::Radio</enum>
+     </property>
+     <property name="buttonOrder">
+      <enum>QRadioGroup::colMajor</enum>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="qelineedit">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>100</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(P)ENERGY_SP</string>
+     </property>
+     <property name="addUnits">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>True E</string>
+     </property>
+    </widget>
+    <widget class="QERadioGroup" name="qeradiogroup">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>160</y>
+       <width>121</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QEAbstractWidget::Never</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(P)MONO01_BANDWIDTH_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string/>
+     </property>
+     <property name="elementsRequired">
+      <number>0</number>
+     </property>
+     <property name="title" stdset="0">
+      <string>Bandwidth</string>
+     </property>
+     <property name="columns">
+      <number>1</number>
+     </property>
+     <property name="buttonStyle">
+      <enum>QRadioGroup::Radio</enum>
+     </property>
+     <property name="buttonOrder">
+      <enum>QRadioGroup::colMajor</enum>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_28">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>260</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>200</red>
+       <green>200</green>
+       <blue>200</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>0</red>
+       <green>255</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(P)MONO01_STRIPE_VB4C_CMD</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QESimpleShape::Never</enum>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_29">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>280</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>200</red>
+       <green>200</green>
+       <blue>200</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>0</red>
+       <green>255</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(P)MONO01_STRIPE_WB4C_CMD</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QESimpleShape::Never</enum>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_27">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>240</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>200</red>
+       <green>200</green>
+       <blue>200</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>0</red>
+       <green>255</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(P)MONO01_STRIPE_RUC_CMD</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QESimpleShape::Never</enum>
+     </property>
+    </widget>
+    <widget class="VCLApplyPushButton" name="vclapplypushbutton_3">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>280</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>S</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(P)MONO01_STRIPE_WB4C_MAN_SELECT.PROC</string>
+     </property>
+    </widget>
+    <widget class="VCLApplyPushButton" name="vclapplypushbutton_2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>260</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>S</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(P)MONO01_STRIPE_VB4C_MAN_SELECT.PROC</string>
+     </property>
+    </widget>
+    <widget class="VCLApplyPushButton" name="vclapplypushbutton">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>240</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>S</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(P)MONO01_STRIPE_RUC_MAN_SELECT.PROC</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>280</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>W/B4C stripe</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>240</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Ru/C stripe</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>260</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>V/B4C stripe</string>
+     </property>
+    </widget>
+    <widget class="QELink" name="qelink_6">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>280</y>
+       <width>31</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="condition" stdset="0">
+      <enum>QELink::Equal</enum>
+     </property>
+     <property name="comparisonValue">
+      <string>1</string>
+     </property>
+     <property name="outTrueValue">
+      <string>1</string>
+     </property>
+     <property name="outFalseValue">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QELink" name="qelink_3">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>220</y>
+       <width>31</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="condition" stdset="0">
+      <enum>QELink::Equal</enum>
+     </property>
+     <property name="comparisonValue">
+      <string>1</string>
+     </property>
+     <property name="outTrueValue">
+      <string>1</string>
+     </property>
+     <property name="outFalseValue">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QELink" name="qelink_4">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>240</y>
+       <width>31</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="condition" stdset="0">
+      <enum>QELink::Equal</enum>
+     </property>
+     <property name="comparisonValue">
+      <string>1</string>
+     </property>
+     <property name="outTrueValue">
+      <string>1</string>
+     </property>
+     <property name="outFalseValue">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QELink" name="qelink_5">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>260</y>
+       <width>31</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="condition" stdset="0">
+      <enum>QELink::Equal</enum>
+     </property>
+     <property name="comparisonValue">
+      <string>1</string>
+     </property>
+     <property name="outTrueValue">
+      <string>1</string>
+     </property>
+     <property name="outFalseValue">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_7">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>280</y>
+       <width>21</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(P)MONO01_STRIPE_WB4C_UI_ENABLE</string>
+     </property>
+     <property name="visible" stdset="0">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_6">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>260</y>
+       <width>21</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(P)MONO01_STRIPE_VB4C_UI_ENABLE</string>
+     </property>
+     <property name="visible" stdset="0">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_5">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>240</y>
+       <width>21</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(P)MONO01_STRIPE_RUC_UI_ENABLE</string>
+     </property>
+     <property name="visible" stdset="0">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_10">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>210</y>
+       <width>21</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(P)MONO01_BANDWIDTH_UI_ENABLE</string>
+     </property>
+     <property name="visible" stdset="0">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QELink" name="qelink">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>110</y>
+       <width>31</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="comparisonValue">
+      <string>1</string>
+     </property>
+     <property name="outTrueValue">
+      <string>1</string>
+     </property>
+     <property name="outFalseValue">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>20</y>
+       <width>31</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(P)MONO01_STATUS_CMD</string>
+     </property>
+     <property name="visible" stdset="0">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>300</y>
+       <width>121</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>MCTCFG01:MONO01_STRIPE_CMD</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>320</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Offset</string>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="qelineedit_3">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>320</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(P)DMM_OFFSET_SP</string>
+     </property>
+     <property name="addUnits">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QELink" name="qelink_9">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>330</y>
+       <width>31</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="comparisonValue">
+      <string>1</string>
+     </property>
+     <property name="outTrueValue">
+      <string>1</string>
+     </property>
+     <property name="outFalseValue">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>130</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MCT E</string>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="qelineedit_4">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>130</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(P)MONO01_MCT_E_SP</string>
+     </property>
+     <property name="addUnits">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QELink" name="qelink_11">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>140</y>
+       <width>31</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="comparisonValue">
+      <string>1</string>
+     </property>
+     <property name="outTrueValue">
+      <string>1</string>
+     </property>
+     <property name="outFalseValue">
+      <string>0</string>
+     </property>
+    </widget>
+    <zorder>qelink_11</zorder>
+    <zorder>qelabel</zorder>
+    <zorder>qelabel_7</zorder>
+    <zorder>qelabel_5</zorder>
+    <zorder>qelabel_6</zorder>
+    <zorder>qelink</zorder>
+    <zorder>qelink_5</zorder>
+    <zorder>qelink_4</zorder>
+    <zorder>qelink_3</zorder>
+    <zorder>qelink_6</zorder>
+    <zorder>qeradiogroup_2</zorder>
+    <zorder>label_8</zorder>
+    <zorder>qeradiogroup</zorder>
+    <zorder>qesimpleshape_28</zorder>
+    <zorder>qesimpleshape_29</zorder>
+    <zorder>qesimpleshape_27</zorder>
+    <zorder>vclapplypushbutton_3</zorder>
+    <zorder>vclapplypushbutton_2</zorder>
+    <zorder>vclapplypushbutton</zorder>
+    <zorder>label_3</zorder>
+    <zorder>label</zorder>
+    <zorder>label_2</zorder>
+    <zorder>qelabel_10</zorder>
+    <zorder>qelabel_3</zorder>
+    <zorder>qelineedit</zorder>
+    <zorder>label_10</zorder>
+    <zorder>qelineedit_3</zorder>
+    <zorder>qelink_9</zorder>
+    <zorder>label_12</zorder>
+    <zorder>qelineedit_4</zorder>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>0</y>
+      <width>141</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Mirror</string>
+    </property>
+    <widget class="QERadioGroup" name="qeradiogroup_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>121</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QEAbstractWidget::Never</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(P)VBM01_STATUS_CMD</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string/>
+     </property>
+     <property name="elementsRequired">
+      <number>0</number>
+     </property>
+     <property name="title" stdset="0">
+      <string>Select</string>
+     </property>
+     <property name="columns">
+      <number>1</number>
+     </property>
+     <property name="spacing">
+      <number>1</number>
+     </property>
+     <property name="buttonStyle">
+      <enum>QRadioGroup::Radio</enum>
+     </property>
+     <property name="buttonOrder">
+      <enum>QRadioGroup::colMajor</enum>
+     </property>
+    </widget>
+    <widget class="QELineEdit" name="qelineedit_2">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>100</y>
+       <width>91</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(P)VBM01_CRIT_ENERGY_SP</string>
+     </property>
+     <property name="addUnits">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>31</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Cr.E</string>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_31">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>150</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>200</red>
+       <green>200</green>
+       <blue>200</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>0</red>
+       <green>255</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(P)VBM01_STRIPE_PT_CMD</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QESimpleShape::Never</enum>
+     </property>
+    </widget>
+    <widget class="QESimpleShape" name="qesimpleshape_30">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>130</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="colour0" stdset="0">
+      <color>
+       <red>200</red>
+       <green>200</green>
+       <blue>200</blue>
+      </color>
+     </property>
+     <property name="colour1" stdset="0">
+      <color>
+       <red>0</red>
+       <green>255</green>
+       <blue>0</blue>
+      </color>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(P)VBM01_STRIPE_RH_CMD</string>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QESimpleShape::Never</enum>
+     </property>
+    </widget>
+    <widget class="VCLApplyPushButton" name="vclapplypushbutton_5">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>150</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>S</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(P)VBM01_STRIPE_PT_MAN_SELECT.PROC</string>
+     </property>
+    </widget>
+    <widget class="VCLApplyPushButton" name="vclapplypushbutton_4">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>130</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>S</string>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(P)VBM01_STRIPE_RH_MAN_SELECT.PROC</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>150</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Pt stripe</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>130</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Rh stripe</string>
+     </property>
+    </widget>
+    <widget class="QELink" name="qelink_7">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>130</y>
+       <width>31</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="condition" stdset="0">
+      <enum>QELink::Equal</enum>
+     </property>
+     <property name="comparisonValue">
+      <string>1</string>
+     </property>
+     <property name="outTrueValue">
+      <string>1</string>
+     </property>
+     <property name="outFalseValue">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QELink" name="qelink_8">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>150</y>
+       <width>31</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="condition" stdset="0">
+      <enum>QELink::Equal</enum>
+     </property>
+     <property name="comparisonValue">
+      <string>1</string>
+     </property>
+     <property name="outTrueValue">
+      <string>1</string>
+     </property>
+     <property name="outFalseValue">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_9">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>150</y>
+       <width>20</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(P)VBM01_STRIPE_PT_UI_ENABLE</string>
+     </property>
+     <property name="visible" stdset="0">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_8">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>130</y>
+       <width>20</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(P)VBM01_STRIPE_RH_UI_ENABLE</string>
+     </property>
+     <property name="visible" stdset="0">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QELink" name="qelink_2">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>100</y>
+       <width>31</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="comparisonValue">
+      <string>1</string>
+     </property>
+     <property name="outTrueValue">
+      <string>1</string>
+     </property>
+     <property name="outFalseValue">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_2">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>10</y>
+       <width>31</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(P)VBM01_STATUS_CMD</string>
+     </property>
+     <property name="visible" stdset="0">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QELabel" name="qelabel_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>170</y>
+       <width>121</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="variable" stdset="0">
+      <string>MCTCFG01:VBM01_STRIPE_CMD</string>
+     </property>
+    </widget>
+    <zorder>qelink_8</zorder>
+    <zorder>qelink_7</zorder>
+    <zorder>qeradiogroup_3</zorder>
+    <zorder>label_9</zorder>
+    <zorder>qesimpleshape_31</zorder>
+    <zorder>qesimpleshape_30</zorder>
+    <zorder>vclapplypushbutton_5</zorder>
+    <zorder>vclapplypushbutton_4</zorder>
+    <zorder>label_5</zorder>
+    <zorder>label_4</zorder>
+    <zorder>qelabel_9</zorder>
+    <zorder>qelabel_8</zorder>
+    <zorder>qelink_2</zorder>
+    <zorder>qelabel_2</zorder>
+    <zorder>qelabel_4</zorder>
+    <zorder>qelineedit_2</zorder>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_4">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>0</y>
+      <width>141</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Table</string>
+    </property>
+    <widget class="QERadioGroup" name="qeradiogroup_4">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>121</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QEAbstractWidget::Never</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(P)TABLE_SELECT</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string/>
+     </property>
+     <property name="elementsRequired">
+      <number>0</number>
+     </property>
+     <property name="arrayIndex">
+      <number>0</number>
+     </property>
+     <property name="title" stdset="0">
+      <string>Select</string>
+     </property>
+     <property name="columns">
+      <number>2</number>
+     </property>
+     <property name="spacing">
+      <number>1</number>
+     </property>
+     <property name="buttonStyle">
+      <enum>QRadioGroup::Radio</enum>
+     </property>
+     <property name="buttonOrder">
+      <enum>QRadioGroup::colMajor</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_7">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>110</y>
+      <width>141</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Slits</string>
+    </property>
+    <widget class="QERadioGroup" name="qeradiogroup_6">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>121</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="displayAlarmStateOption" stdset="0">
+      <enum>QEAbstractWidget::Never</enum>
+     </property>
+     <property name="variable" stdset="0">
+      <string>$(P)SLIT_CONTROL_SELECT</string>
+     </property>
+     <property name="variableSubstitutions" stdset="0">
+      <string/>
+     </property>
+     <property name="elementsRequired">
+      <number>0</number>
+     </property>
+     <property name="arrayIndex">
+      <number>0</number>
+     </property>
+     <property name="title" stdset="0">
+      <string>Mode</string>
+     </property>
+     <property name="columns">
+      <number>1</number>
+     </property>
+     <property name="spacing">
+      <number>2</number>
+     </property>
+     <property name="buttonStyle">
+      <enum>QRadioGroup::Radio</enum>
+     </property>
+     <property name="buttonOrder">
+      <enum>QRadioGroup::colMajor</enum>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QEBitStatus</class>
+   <extends>QBitStatus</extends>
+   <header>QEBitStatus.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEDescriptionLabel</class>
+   <extends>QELabel</extends>
+   <header>QEDescriptionLabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>QELineEdit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEPushButton</class>
+   <extends>QPushButton</extends>
+   <header>QEPushButton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QERadioGroup</class>
+   <extends>QWidget</extends>
+   <header>QERadioGroup.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QESimpleShape</class>
+   <extends>QSimpleShape</extends>
+   <header>QESimpleShape.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QBitStatus</class>
+   <extends>QWidget</extends>
+   <header>QBitStatus.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELink</class>
+   <extends>QLabel</extends>
+   <header>QELink.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QSimpleShape</class>
+   <extends>QWidget</extends>
+   <header>QSimpleShape.h</header>
+  </customwidget>
+  <customwidget>
+   <class>VCLApplyPushButton</class>
+   <extends>QEPushButton</extends>
+   <header>VCLApplyPushButton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>VCLStartPushButton</class>
+   <extends>QEPushButton</extends>
+   <header>VCLStartPushButton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>VCLStopPushButton</class>
+   <extends>QEPushButton</extends>
+   <header>VCLStopPushButton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>VCLValidatePushButton</class>
+   <extends>QEPushButton</extends>
+   <header>VCLValidatePushButton.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>qelabel</sender>
+   <signal>dbValueChanged(int)</signal>
+   <receiver>qelink</receiver>
+   <slot>in(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>111</x>
+     <y>17</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>132</x>
+     <y>17</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>qelink</sender>
+   <signal>out(bool)</signal>
+   <receiver>qelineedit</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>132</x>
+     <y>17</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>72</x>
+     <y>41</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>qelabel_2</sender>
+   <signal>dbValueChanged(int)</signal>
+   <receiver>qelink_2</receiver>
+   <slot>in(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>265</x>
+     <y>10</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>275</x>
+     <y>57</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>qelink_2</sender>
+   <signal>out(bool)</signal>
+   <receiver>qelineedit_2</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>275</x>
+     <y>57</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>222</x>
+     <y>41</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>qelabel_10</sender>
+   <signal>dbValueChanged(int)</signal>
+   <receiver>qelink_3</receiver>
+   <slot>in(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>150</x>
+     <y>177</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>125</x>
+     <y>177</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>qelink_3</sender>
+   <signal>out(bool)</signal>
+   <receiver>qeradiogroup</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>125</x>
+     <y>177</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>70</x>
+     <y>145</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>qelabel_5</sender>
+   <signal>dbValueChanged(int)</signal>
+   <receiver>qelink_4</receiver>
+   <slot>in(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>170</x>
+     <y>197</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>145</x>
+     <y>197</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>qelink_4</sender>
+   <signal>out(bool)</signal>
+   <receiver>label</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>145</x>
+     <y>197</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>90</x>
+     <y>197</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>qelink_5</sender>
+   <signal>out(bool)</signal>
+   <receiver>label_2</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>145</x>
+     <y>217</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>90</x>
+     <y>217</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>qelabel_7</sender>
+   <signal>dbValueChanged(int)</signal>
+   <receiver>qelink_6</receiver>
+   <slot>in(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>170</x>
+     <y>237</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>145</x>
+     <y>237</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>qelink_6</sender>
+   <signal>out(bool)</signal>
+   <receiver>label_3</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>145</x>
+     <y>237</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>90</x>
+     <y>237</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>qelabel_6</sender>
+   <signal>dbValueChanged(int)</signal>
+   <receiver>qelink_5</receiver>
+   <slot>in(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>170</x>
+     <y>217</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>145</x>
+     <y>217</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>qelabel_8</sender>
+   <signal>dbValueChanged(int)</signal>
+   <receiver>qelink_7</receiver>
+   <slot>in(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>290</x>
+     <y>117</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>275</x>
+     <y>117</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>qelink_7</sender>
+   <signal>out(bool)</signal>
+   <receiver>label_4</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>275</x>
+     <y>117</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>245</x>
+     <y>117</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>qelabel_9</sender>
+   <signal>dbValueChanged(int)</signal>
+   <receiver>qelink_8</receiver>
+   <slot>in(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>289</x>
+     <y>137</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>275</x>
+     <y>137</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>qelink_8</sender>
+   <signal>out(bool)</signal>
+   <receiver>label_5</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>275</x>
+     <y>137</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>245</x>
+     <y>137</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>qelabel</sender>
+   <signal>dbValueChanged(int)</signal>
+   <receiver>qelink_9</receiver>
+   <slot>in(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>125</x>
+     <y>30</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>125</x>
+     <y>307</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>qelink_9</sender>
+   <signal>out(bool)</signal>
+   <receiver>qelineedit_3</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>125</x>
+     <y>307</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>90</x>
+     <y>300</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>qeradiogroup_5</sender>
+   <signal>dbValueChanged(int)</signal>
+   <receiver>qelink_10</receiver>
+   <slot>in(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>610</x>
+     <y>55</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>535</x>
+     <y>107</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>qelink_10</sender>
+   <signal>out(bool)</signal>
+   <receiver>vclvalidatepushbutton</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>535</x>
+     <y>107</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>499</x>
+     <y>91</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>qelink_11</sender>
+   <signal>out(bool)</signal>
+   <receiver>qelineedit_4</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>125</x>
+     <y>147</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>90</x>
+     <y>140</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>qelabel</sender>
+   <signal>dbValueChanged(int)</signal>
+   <receiver>qelink_11</receiver>
+   <slot>in(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>125</x>
+     <y>30</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>125</x>
+     <y>147</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

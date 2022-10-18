@@ -1,0 +1,994 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>480</width>
+    <height>212</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Flux Spectrum Dose Rates</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QFrame" name="mainFormFrame">
+     <property name="minimumSize">
+      <size>
+       <width>480</width>
+       <height>212</height>
+      </size>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="leftMargin">
+       <number>12</number>
+      </property>
+      <property name="topMargin">
+       <number>8</number>
+      </property>
+      <property name="rightMargin">
+       <number>12</number>
+      </property>
+      <property name="bottomMargin">
+       <number>8</number>
+      </property>
+      <property name="horizontalSpacing">
+       <number>8</number>
+      </property>
+      <property name="verticalSpacing">
+       <number>3</number>
+      </property>
+      <item row="8" column="1">
+       <widget class="QELabel" name="qelabel_01">
+        <property name="minimumSize">
+         <size>
+          <width>116</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="variable" stdset="0">
+         <string>MCTRSD08:DOSE_RATE_AIR</string>
+        </property>
+        <property name="notation" stdset="0">
+         <enum>QELabel::Scientific</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QELabel" name="qelabel_02">
+        <property name="minimumSize">
+         <size>
+          <width>116</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="variable" stdset="0">
+         <string>MCTRSD03:DOSE_RATE_AIR</string>
+        </property>
+        <property name="notation" stdset="0">
+         <enum>QELabel::Scientific</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QELabel" name="qelabel_03">
+        <property name="minimumSize">
+         <size>
+          <width>116</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="variable" stdset="0">
+         <string>MCTRSD01:DOSE_RATE_AIR</string>
+        </property>
+        <property name="notation" stdset="0">
+         <enum>QELabel::Scientific</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="2">
+       <widget class="QELabel" name="qelabel_04">
+        <property name="minimumSize">
+         <size>
+          <width>116</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="variable" stdset="0">
+         <string>MCTRSD07:DOSE_RATE_SOLID_WATER</string>
+        </property>
+        <property name="notation" stdset="0">
+         <enum>QELabel::Scientific</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="2">
+       <widget class="QELabel" name="qelabel_05">
+        <property name="minimumSize">
+         <size>
+          <width>116</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="variable" stdset="0">
+         <string>MCTRSD04:DOSE_RATE_SOLID_WATER</string>
+        </property>
+        <property name="notation" stdset="0">
+         <enum>QELabel::Scientific</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="3">
+       <widget class="QELabel" name="qelabel_06">
+        <property name="minimumSize">
+         <size>
+          <width>116</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="variable" stdset="0">
+         <string>MCTRSD09:DOSE_RATE_GRAPH</string>
+        </property>
+        <property name="notation" stdset="0">
+         <enum>QELabel::Scientific</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="3">
+       <widget class="QELabel" name="qelabel_07">
+        <property name="minimumSize">
+         <size>
+          <width>116</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="variable" stdset="0">
+         <string>MCTRSD08:DOSE_RATE_GRAPH</string>
+        </property>
+        <property name="notation" stdset="0">
+         <enum>QELabel::Scientific</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="3">
+       <widget class="QELabel" name="qelabel_08">
+        <property name="minimumSize">
+         <size>
+          <width>116</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="variable" stdset="0">
+         <string>MCTRSD03:DOSE_RATE_GRAPH</string>
+        </property>
+        <property name="notation" stdset="0">
+         <enum>QELabel::Scientific</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QELabel" name="qelabel_09">
+        <property name="minimumSize">
+         <size>
+          <width>116</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="variable" stdset="0">
+         <string>MCTRSD07:DOSE_RATE_AIR</string>
+        </property>
+        <property name="notation" stdset="0">
+         <enum>QELabel::Scientific</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="qlabel_01">
+        <property name="minimumSize">
+         <size>
+          <width>116</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="font">
+         <font/>
+        </property>
+        <property name="text">
+         <string>Dose Rate Air</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="qlabel_02">
+        <property name="minimumSize">
+         <size>
+          <width>64</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>64</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>What If D</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="2">
+       <widget class="QELabel" name="qelabel_10">
+        <property name="minimumSize">
+         <size>
+          <width>116</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="variable" stdset="0">
+         <string>MCTRSD08:DOSE_RATE_SOLID_WATER</string>
+        </property>
+        <property name="notation" stdset="0">
+         <enum>QELabel::Scientific</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QELabel" name="qelabel_11">
+        <property name="minimumSize">
+         <size>
+          <width>116</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="variable" stdset="0">
+         <string>MCTRSD03:DOSE_RATE_SOLID_WATER</string>
+        </property>
+        <property name="notation" stdset="0">
+         <enum>QELabel::Scientific</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="3">
+       <widget class="QELabel" name="qelabel_12">
+        <property name="minimumSize">
+         <size>
+          <width>116</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="variable" stdset="0">
+         <string>MCTRSD05:DOSE_RATE_GRAPH</string>
+        </property>
+        <property name="notation" stdset="0">
+         <enum>QELabel::Scientific</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QELabel" name="qelabel_13">
+        <property name="minimumSize">
+         <size>
+          <width>116</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="variable" stdset="0">
+         <string>MCTRSD02:DOSE_RATE_AIR</string>
+        </property>
+        <property name="notation" stdset="0">
+         <enum>QELabel::Scientific</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLabel" name="qlabel_03">
+        <property name="minimumSize">
+         <size>
+          <width>116</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="font">
+         <font/>
+        </property>
+        <property name="text">
+         <string>Dose Rate Water</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QELabel" name="qelabel_14">
+        <property name="minimumSize">
+         <size>
+          <width>116</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="variable" stdset="0">
+         <string>MCTRSD05:DOSE_RATE_AIR</string>
+        </property>
+        <property name="notation" stdset="0">
+         <enum>QELabel::Scientific</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="qlabel_04">
+        <property name="minimumSize">
+         <size>
+          <width>64</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>64</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Actual</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="2">
+       <widget class="QELabel" name="qelabel_15">
+        <property name="minimumSize">
+         <size>
+          <width>116</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="variable" stdset="0">
+         <string>MCTRSD05:DOSE_RATE_SOLID_WATER</string>
+        </property>
+        <property name="notation" stdset="0">
+         <enum>QELabel::Scientific</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QELabel" name="qelabel_16">
+        <property name="minimumSize">
+         <size>
+          <width>116</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="variable" stdset="0">
+         <string>MCTRSD05:DOSE_RATE_AIR</string>
+        </property>
+        <property name="notation" stdset="0">
+         <enum>QELabel::Scientific</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="3">
+       <widget class="QELabel" name="qelabel_17">
+        <property name="minimumSize">
+         <size>
+          <width>116</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="variable" stdset="0">
+         <string>MCTRSD02:DOSE_RATE_GRAPH</string>
+        </property>
+        <property name="notation" stdset="0">
+         <enum>QELabel::Scientific</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="2">
+       <widget class="QELabel" name="qelabel_18">
+        <property name="minimumSize">
+         <size>
+          <width>116</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="variable" stdset="0">
+         <string>MCTRSD05:DOSE_RATE_SOLID_WATER</string>
+        </property>
+        <property name="notation" stdset="0">
+         <enum>QELabel::Scientific</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QELabel" name="qelabel_19">
+        <property name="minimumSize">
+         <size>
+          <width>116</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="variable" stdset="0">
+         <string>MCTRSD01:DOSE_RATE_GRAPH</string>
+        </property>
+        <property name="notation" stdset="0">
+         <enum>QELabel::Scientific</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QELabel" name="qelabel_20">
+        <property name="minimumSize">
+         <size>
+          <width>116</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="variable" stdset="0">
+         <string>MCTRSD02:DOSE_RATE_SOLID_WATER</string>
+        </property>
+        <property name="notation" stdset="0">
+         <enum>QELabel::Scientific</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QELabel" name="qelabel_21">
+        <property name="minimumSize">
+         <size>
+          <width>116</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="variable" stdset="0">
+         <string>MCTRSD01:DOSE_RATE_SOLID_WATER</string>
+        </property>
+        <property name="notation" stdset="0">
+         <enum>QELabel::Scientific</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QELabel" name="qelabel_22">
+        <property name="minimumSize">
+         <size>
+          <width>116</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="variable" stdset="0">
+         <string>MCTRSD04:DOSE_RATE_AIR</string>
+        </property>
+        <property name="notation" stdset="0">
+         <enum>QELabel::Scientific</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="0">
+       <widget class="QLabel" name="qlabel_05">
+        <property name="minimumSize">
+         <size>
+          <width>64</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>64</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>What If E</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="1">
+       <widget class="QELabel" name="qelabel_23">
+        <property name="minimumSize">
+         <size>
+          <width>116</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="variable" stdset="0">
+         <string>MCTRSD09:DOSE_RATE_AIR</string>
+        </property>
+        <property name="notation" stdset="0">
+         <enum>QELabel::Scientific</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="qlabel_06">
+        <property name="minimumSize">
+         <size>
+          <width>64</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>64</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>All Out</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="qlabel_07">
+        <property name="minimumSize">
+         <size>
+          <width>64</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>64</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>What If C</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="2">
+       <widget class="QELabel" name="qelabel_24">
+        <property name="minimumSize">
+         <size>
+          <width>116</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="variable" stdset="0">
+         <string>MCTRSD09:DOSE_RATE_SOLID_WATER</string>
+        </property>
+        <property name="notation" stdset="0">
+         <enum>QELabel::Scientific</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="3">
+       <widget class="QELabel" name="qelabel_25">
+        <property name="minimumSize">
+         <size>
+          <width>116</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="variable" stdset="0">
+         <string>MCTRSD07:DOSE_RATE_GRAPH</string>
+        </property>
+        <property name="notation" stdset="0">
+         <enum>QELabel::Scientific</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="qlabel_08">
+        <property name="minimumSize">
+         <size>
+          <width>64</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>64</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>What If A</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="qlabel_09">
+        <property name="minimumSize">
+         <size>
+          <width>64</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>64</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>What If B</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="3">
+       <widget class="QELabel" name="qelabel_26">
+        <property name="minimumSize">
+         <size>
+          <width>116</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="variable" stdset="0">
+         <string>MCTRSD04:DOSE_RATE_GRAPH</string>
+        </property>
+        <property name="notation" stdset="0">
+         <enum>QELabel::Scientific</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="0">
+       <widget class="QLabel" name="qlabel_10">
+        <property name="minimumSize">
+         <size>
+          <width>64</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>64</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>What If F</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="3">
+       <widget class="QELabel" name="qelabel_27">
+        <property name="minimumSize">
+         <size>
+          <width>116</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>17</height>
+         </size>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="variable" stdset="0">
+         <string>MCTRSD05:DOSE_RATE_GRAPH</string>
+        </property>
+        <property name="notation" stdset="0">
+         <enum>QELabel::Scientific</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QLabel" name="qlabel_11">
+        <property name="minimumSize">
+         <size>
+          <width>116</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="font">
+         <font/>
+        </property>
+        <property name="text">
+         <string>Dose Rate Graphite</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="qlabel_12">
+        <property name="minimumSize">
+         <size>
+          <width>64</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>64</width>
+          <height>15</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>What If</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

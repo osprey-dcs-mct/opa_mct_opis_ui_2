@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1600</width>
+    <height>851</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MCT Slit Position Targets</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="minimumSize">
+      <size>
+       <width>941</width>
+       <height>755</height>
+      </size>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1321</width>
+        <height>241</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>MCT SLT A</string>
+      </property>
+      <widget class="QEForm" name="qeform_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>142</width>
+         <height>142</height>
+        </rect>
+       </property>
+       <property name="uiFile" stdset="0">
+        <string>MCT_slit_status.ui</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>SLIT=MCTSLT01:</string>
+       </property>
+      </widget>
+      <widget class="QEForm" name="qeform_4">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>10</y>
+         <width>1171</width>
+         <height>221</height>
+        </rect>
+       </property>
+       <property name="uiFile" stdset="0">
+        <string>MCT_slit_target.ui</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>SLIT=MCTSLT01:</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>250</y>
+        <width>1321</width>
+        <height>241</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>MCT SLT B</string>
+      </property>
+      <widget class="QEForm" name="qeform_9">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>142</width>
+         <height>142</height>
+        </rect>
+       </property>
+       <property name="uiFile" stdset="0">
+        <string>MCT_slit_status.ui</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>SLIT=MCTSLT02:</string>
+       </property>
+      </widget>
+      <widget class="QEForm" name="qeform_10">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>10</y>
+         <width>1171</width>
+         <height>221</height>
+        </rect>
+       </property>
+       <property name="uiFile" stdset="0">
+        <string>MCT_slit_target.ui</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>SLIT=MCTSLT02:</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>500</y>
+        <width>1321</width>
+        <height>241</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>MCT SLT C</string>
+      </property>
+      <widget class="QEForm" name="qeform_11">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>142</width>
+         <height>142</height>
+        </rect>
+       </property>
+       <property name="uiFile" stdset="0">
+        <string>MCT_slit_status.ui</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>SLIT=MCTSLT03:</string>
+       </property>
+      </widget>
+      <widget class="QEForm" name="qeform_12">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>10</y>
+         <width>1171</width>
+         <height>221</height>
+        </rect>
+       </property>
+       <property name="uiFile" stdset="0">
+        <string>MCT_slit_target.ui</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>SLIT=MCTSLT03:</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QEForm</class>
+   <extends>QWidget</extends>
+   <header>QEForm.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+ <designerdata>
+  <property name="gridDeltaX">
+   <number>10</number>
+  </property>
+  <property name="gridDeltaY">
+   <number>10</number>
+  </property>
+  <property name="gridSnapX">
+   <bool>true</bool>
+  </property>
+  <property name="gridSnapY">
+   <bool>true</bool>
+  </property>
+  <property name="gridVisible">
+   <bool>true</bool>
+  </property>
+ </designerdata>
+</ui>

@@ -1,0 +1,3198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SpectrumFluxForm</class>
+ <widget class="QWidget" name="SpectrumFluxForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1112</width>
+    <height>748</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Flux Spectrum</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QFrame" name="mainFormFrame">
+     <property name="minimumSize">
+      <size>
+       <width>1112</width>
+       <height>748</height>
+      </size>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <property name="spacing">
+       <number>2</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QEFrame" name="imageFrame">
+        <property name="minimumSize">
+         <size>
+          <width>1106</width>
+          <height>187</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>187</width>
+          <height>234</height>
+         </size>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+        <property name="pixmap0" stdset="0">
+         <pixmap>mct_beam_schematic.png</pixmap>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="qframe_02">
+        <property name="minimumSize">
+         <size>
+          <width>948</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QELabel" name="qelabel_01">
+         <property name="geometry">
+          <rect>
+           <x>178</x>
+           <y>10</y>
+           <width>108</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+         <property name="variable" stdset="0">
+          <string>MCTFLT01MOT01.RBV</string>
+         </property>
+        </widget>
+        <widget class="QELabel" name="qelabel_02">
+         <property name="geometry">
+          <rect>
+           <x>302</x>
+           <y>10</y>
+           <width>108</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+         <property name="variable" stdset="0">
+          <string>MCTFLT02MOT01.RBV</string>
+         </property>
+        </widget>
+        <widget class="QELabel" name="qelabel_03">
+         <property name="geometry">
+          <rect>
+           <x>426</x>
+           <y>10</y>
+           <width>108</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+         <property name="variable" stdset="0">
+          <string>MCTFLT03MOT01.RBV</string>
+         </property>
+        </widget>
+        <widget class="QELabel" name="qelabel_04">
+         <property name="geometry">
+          <rect>
+           <x>550</x>
+           <y>10</y>
+           <width>108</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+         <property name="variable" stdset="0">
+          <string>MCTFLT04MOT01.RBV</string>
+         </property>
+        </widget>
+        <widget class="QELabel" name="qelabel_05">
+         <property name="geometry">
+          <rect>
+           <x>674</x>
+           <y>10</y>
+           <width>108</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+         <property name="variable" stdset="0">
+          <string>MCTFLT05MOT01.RBV</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="qlabel_01">
+         <property name="geometry">
+          <rect>
+           <x>12</x>
+           <y>10</y>
+           <width>156</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Actual Paddle Positions</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="qlabel_02">
+         <property name="geometry">
+          <rect>
+           <x>12</x>
+           <y>32</y>
+           <width>156</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Actual Paddle Filter</string>
+         </property>
+        </widget>
+        <widget class="QELabel" name="qelabel_06">
+         <property name="geometry">
+          <rect>
+           <x>178</x>
+           <y>32</y>
+           <width>108</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="variable" stdset="0">
+          <string>MCTFLT01:SELECTION_STATUS</string>
+         </property>
+        </widget>
+        <widget class="QELabel" name="qelabel_07">
+         <property name="geometry">
+          <rect>
+           <x>302</x>
+           <y>32</y>
+           <width>108</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="variable" stdset="0">
+          <string>MCTFLT02:SELECTION_STATUS</string>
+         </property>
+        </widget>
+        <widget class="QELabel" name="qelabel_08">
+         <property name="geometry">
+          <rect>
+           <x>426</x>
+           <y>32</y>
+           <width>108</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="variable" stdset="0">
+          <string>MCTFLT03:SELECTION_STATUS</string>
+         </property>
+        </widget>
+        <widget class="QELabel" name="qelabel_09">
+         <property name="geometry">
+          <rect>
+           <x>550</x>
+           <y>32</y>
+           <width>108</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="variable" stdset="0">
+          <string>MCTFLT04:SELECTION_STATUS</string>
+         </property>
+        </widget>
+        <widget class="QELabel" name="qelabel_10">
+         <property name="geometry">
+          <rect>
+           <x>674</x>
+           <y>32</y>
+           <width>108</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="variable" stdset="0">
+          <string>MCTFLT05:SELECTION_STATUS</string>
+         </property>
+        </widget>
+        <widget class="QEComboBox" name="beamPosnComboBox">
+         <property name="geometry">
+          <rect>
+           <x>820</x>
+           <y>60</y>
+           <width>88</width>
+           <height>25</height>
+          </rect>
+         </property>
+         <property name="variable" stdset="0">
+          <string>MCTFLT00:POSTION_IN_BEAM_CMD</string>
+         </property>
+         <property name="allowFocusUpdate">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QLabel" name="qlabel_03">
+         <property name="geometry">
+          <rect>
+           <x>820</x>
+           <y>10</y>
+           <width>88</width>
+           <height>44</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Vertical Position in Beam </string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QLabel" name="qlabel_04">
+         <property name="geometry">
+          <rect>
+           <x>12</x>
+           <y>62</y>
+           <width>156</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>What If paddle Filter</string>
+         </property>
+        </widget>
+        <widget class="QEComboBox" name="qecombobox_1">
+         <property name="geometry">
+          <rect>
+           <x>178</x>
+           <y>60</y>
+           <width>108</width>
+           <height>25</height>
+          </rect>
+         </property>
+         <property name="variable" stdset="0">
+          <string>MCTFLT01:WHATIF_SELECTION_CMD</string>
+         </property>
+        </widget>
+        <widget class="QEComboBox" name="qecombobox_2">
+         <property name="geometry">
+          <rect>
+           <x>302</x>
+           <y>60</y>
+           <width>108</width>
+           <height>25</height>
+          </rect>
+         </property>
+         <property name="variable" stdset="0">
+          <string>MCTFLT02:WHATIF_SELECTION_CMD</string>
+         </property>
+        </widget>
+        <widget class="QEComboBox" name="qecombobox_3">
+         <property name="geometry">
+          <rect>
+           <x>426</x>
+           <y>60</y>
+           <width>108</width>
+           <height>25</height>
+          </rect>
+         </property>
+         <property name="variable" stdset="0">
+          <string>MCTFLT03:WHATIF_SELECTION_CMD</string>
+         </property>
+        </widget>
+        <widget class="QEComboBox" name="qecombobox_4">
+         <property name="geometry">
+          <rect>
+           <x>550</x>
+           <y>60</y>
+           <width>108</width>
+           <height>25</height>
+          </rect>
+         </property>
+         <property name="variable" stdset="0">
+          <string>MCTFLT04:WHATIF_SELECTION_CMD</string>
+         </property>
+        </widget>
+        <widget class="QEComboBox" name="qecombobox_5">
+         <property name="geometry">
+          <rect>
+           <x>674</x>
+           <y>60</y>
+           <width>108</width>
+           <height>25</height>
+          </rect>
+         </property>
+         <property name="variable" stdset="0">
+          <string>MCTFLT05:WHATIF_SELECTION_CMD</string>
+         </property>
+        </widget>
+        <widget class="VCLNavigatePushButton" name="vclnavigatepushbutton_2">
+         <property name="geometry">
+          <rect>
+           <x>960</x>
+           <y>42</y>
+           <width>136</width>
+           <height>25</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>136</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>136</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Dose Rates</string>
+         </property>
+         <property name="guiFile" stdset="0">
+          <string>mct_flux_spectrum_dose_rate.ui</string>
+         </property>
+         <property name="creationOption" stdset="0">
+          <enum>QEPushButton::NewWindow</enum>
+         </property>
+        </widget>
+        <widget class="VCLNavigatePushButton" name="vclnavigatepushbutton_1">
+         <property name="geometry">
+          <rect>
+           <x>960</x>
+           <y>10</y>
+           <width>136</width>
+           <height>25</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>136</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>136</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Half Value Layers</string>
+         </property>
+         <property name="guiFile" stdset="0">
+          <string>mct_flux_spectrum_hvl.ui</string>
+         </property>
+         <property name="creationOption" stdset="0">
+          <enum>QEPushButton::NewWindow</enum>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="minimumSize">
+         <size>
+          <width>1092</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="tabPosition">
+         <enum>QTabWidget::South</enum>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="page_1">
+         <attribute name="title">
+          <string> Postion In Beam </string>
+         </attribute>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <property name="spacing">
+           <number>4</number>
+          </property>
+          <property name="leftMargin">
+           <number>2</number>
+          </property>
+          <property name="topMargin">
+           <number>2</number>
+          </property>
+          <property name="rightMargin">
+           <number>2</number>
+          </property>
+          <property name="bottomMargin">
+           <number>6</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="qframe_03">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>92</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>92</height>
+             </size>
+            </property>
+            <widget class="QLabel" name="qlabel_05">
+             <property name="geometry">
+              <rect>
+               <x>100</x>
+               <y>8</y>
+               <width>116</width>
+               <height>15</height>
+              </rect>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>15</height>
+              </size>
+             </property>
+             <property name="font">
+              <font/>
+             </property>
+             <property name="text">
+              <string>Max Flux</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="qlabel_06">
+             <property name="geometry">
+              <rect>
+               <x>228</x>
+               <y>8</y>
+               <width>116</width>
+               <height>15</height>
+              </rect>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>15</height>
+              </size>
+             </property>
+             <property name="font">
+              <font/>
+             </property>
+             <property name="text">
+              <string>Energy At Max</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="qlabel_07">
+             <property name="geometry">
+              <rect>
+               <x>356</x>
+               <y>8</y>
+               <width>116</width>
+               <height>15</height>
+              </rect>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>15</height>
+              </size>
+             </property>
+             <property name="font">
+              <font/>
+             </property>
+             <property name="text">
+              <string>FWHM</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="qlabel_08">
+             <property name="geometry">
+              <rect>
+               <x>484</x>
+               <y>8</y>
+               <width>116</width>
+               <height>15</height>
+              </rect>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>15</height>
+              </size>
+             </property>
+             <property name="font">
+              <font/>
+             </property>
+             <property name="text">
+              <string>Wght. Ave. Engy</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="qlabel_09">
+             <property name="geometry">
+              <rect>
+               <x>612</x>
+               <y>8</y>
+               <width>116</width>
+               <height>15</height>
+              </rect>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>15</height>
+              </size>
+             </property>
+             <property name="font">
+              <font/>
+             </property>
+             <property name="text">
+              <string>Integrated  Flux</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+            <widget class="QLabel" name="qlabel_10">
+             <property name="geometry">
+              <rect>
+               <x>740</x>
+               <y>8</y>
+               <width>116</width>
+               <height>15</height>
+              </rect>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>15</height>
+              </size>
+             </property>
+             <property name="font">
+              <font/>
+             </property>
+             <property name="text">
+              <string>Power</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_11">
+             <property name="geometry">
+              <rect>
+               <x>100</x>
+               <y>28</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD01:MAX_FLUX</string>
+             </property>
+             <property name="addUnits">
+              <bool>false</bool>
+             </property>
+             <property name="notation" stdset="0">
+              <enum>QELabel::Scientific</enum>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_12">
+             <property name="geometry">
+              <rect>
+               <x>228</x>
+               <y>28</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD01:ENERGY_AT_MAX_FLUX</string>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_13">
+             <property name="geometry">
+              <rect>
+               <x>356</x>
+               <y>28</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD01:FWHM</string>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_14">
+             <property name="geometry">
+              <rect>
+               <x>484</x>
+               <y>28</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD01:WEIGHTED_AVE_ENERGY</string>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_15">
+             <property name="geometry">
+              <rect>
+               <x>612</x>
+               <y>28</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD01:INTEGRATED_FLUX</string>
+             </property>
+             <property name="addUnits">
+              <bool>false</bool>
+             </property>
+             <property name="notation" stdset="0">
+              <enum>QELabel::Scientific</enum>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_16">
+             <property name="geometry">
+              <rect>
+               <x>740</x>
+               <y>28</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD01:POWER</string>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_17">
+             <property name="geometry">
+              <rect>
+               <x>100</x>
+               <y>48</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD02:MAX_FLUX</string>
+             </property>
+             <property name="addUnits">
+              <bool>false</bool>
+             </property>
+             <property name="notation" stdset="0">
+              <enum>QELabel::Scientific</enum>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_18">
+             <property name="geometry">
+              <rect>
+               <x>228</x>
+               <y>48</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD02:ENERGY_AT_MAX_FLUX</string>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_19">
+             <property name="geometry">
+              <rect>
+               <x>356</x>
+               <y>48</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD02:FWHM</string>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_20">
+             <property name="geometry">
+              <rect>
+               <x>484</x>
+               <y>48</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD02:WEIGHTED_AVE_ENERGY</string>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_21">
+             <property name="geometry">
+              <rect>
+               <x>612</x>
+               <y>48</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD02:INTEGRATED_FLUX</string>
+             </property>
+             <property name="addUnits">
+              <bool>false</bool>
+             </property>
+             <property name="notation" stdset="0">
+              <enum>QELabel::Scientific</enum>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_22">
+             <property name="geometry">
+              <rect>
+               <x>740</x>
+               <y>48</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD02:POWER</string>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_23">
+             <property name="geometry">
+              <rect>
+               <x>100</x>
+               <y>68</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD03:MAX_FLUX</string>
+             </property>
+             <property name="addUnits">
+              <bool>false</bool>
+             </property>
+             <property name="notation" stdset="0">
+              <enum>QELabel::Scientific</enum>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_24">
+             <property name="geometry">
+              <rect>
+               <x>228</x>
+               <y>68</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD03:ENERGY_AT_MAX_FLUX</string>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_25">
+             <property name="geometry">
+              <rect>
+               <x>356</x>
+               <y>68</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD03:FWHM</string>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_26">
+             <property name="geometry">
+              <rect>
+               <x>484</x>
+               <y>68</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD03:WEIGHTED_AVE_ENERGY</string>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_27">
+             <property name="geometry">
+              <rect>
+               <x>612</x>
+               <y>68</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD03:INTEGRATED_FLUX</string>
+             </property>
+             <property name="addUnits">
+              <bool>false</bool>
+             </property>
+             <property name="notation" stdset="0">
+              <enum>QELabel::Scientific</enum>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_28">
+             <property name="geometry">
+              <rect>
+               <x>740</x>
+               <y>68</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD03:POWER</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="qlabel_11">
+             <property name="geometry">
+              <rect>
+               <x>8</x>
+               <y>28</y>
+               <width>64</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Actual</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="qlabel_12">
+             <property name="geometry">
+              <rect>
+               <x>8</x>
+               <y>48</y>
+               <width>64</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>What If</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="qlabel_13">
+             <property name="geometry">
+              <rect>
+               <x>8</x>
+               <y>68</y>
+               <width>64</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>All Out</string>
+             </property>
+            </widget>
+            <zorder>qlabel_05</zorder>
+            <zorder>qlabel_06</zorder>
+            <zorder>qlabel_07</zorder>
+            <zorder>qlabel_08</zorder>
+            <zorder>qlabel_09</zorder>
+            <zorder>qlabel_10</zorder>
+            <zorder>qlabel_11</zorder>
+            <zorder>qlabel_12</zorder>
+            <zorder>qlabel_13</zorder>
+            <zorder>qelabel_13</zorder>
+            <zorder>qelabel_11</zorder>
+            <zorder>qelabel_12</zorder>
+            <zorder>qelabel_14</zorder>
+            <zorder>qelabel_15</zorder>
+            <zorder>qelabel_16</zorder>
+            <zorder>qelabel_17</zorder>
+            <zorder>qelabel_18</zorder>
+            <zorder>qelabel_19</zorder>
+            <zorder>qelabel_20</zorder>
+            <zorder>qelabel_21</zorder>
+            <zorder>qelabel_22</zorder>
+            <zorder>qelabel_23</zorder>
+            <zorder>qelabel_24</zorder>
+            <zorder>qelabel_25</zorder>
+            <zorder>qelabel_26</zorder>
+            <zorder>qelabel_27</zorder>
+            <zorder>qelabel_28</zorder>
+           </widget>
+          </item>
+          <item>
+           <widget class="QEPlot" name="qeplot_01">
+            <property name="minimumSize">
+             <size>
+              <width>1080</width>
+              <height>232</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="defaultStyle" stdset="0">
+             <string>QWidget { background-color: rgba(240, 240, 240, 255); color: rgba(0, 0, 0, 255); }</string>
+            </property>
+            <property name="displayAlarmStateOption" stdset="0">
+             <enum>QEFrame::WhenInvalid</enum>
+            </property>
+            <property name="variable2" stdset="0">
+             <string>MCTRSD01:SPECTRUM</string>
+            </property>
+            <property name="variable3" stdset="0">
+             <string>MCTRSD02:SPECTRUM</string>
+            </property>
+            <property name="variable4" stdset="0">
+             <string>MCTRSD03:SPECTRUM</string>
+            </property>
+            <property name="traceColor3">
+             <color>
+              <red>0</red>
+              <green>192</green>
+              <blue>0</blue>
+             </color>
+            </property>
+            <property name="traceWidth2">
+             <number>2</number>
+            </property>
+            <property name="traceWidth3">
+             <number>2</number>
+            </property>
+            <property name="traceWidth4">
+             <number>2</number>
+            </property>
+            <property name="gridEnableMajorX">
+             <bool>true</bool>
+            </property>
+            <property name="gridEnableMajorY">
+             <bool>true</bool>
+            </property>
+            <property name="xUnit">
+             <string>keV</string>
+            </property>
+            <property name="yUnit">
+             <string>ph/s/0.1%BW</string>
+            </property>
+            <property name="xStart">
+             <double>1.000000000000000</double>
+            </property>
+            <property name="xIncrement">
+             <double>0.100000000000000</double>
+            </property>
+            <property name="margin">
+             <number>4</number>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="qframe_04">
+            <property name="minimumSize">
+             <size>
+              <width>1080</width>
+              <height>24</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>24</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <widget class="QLabel" name="qlabel_14">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>3</y>
+               <width>64</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Legend</string>
+             </property>
+            </widget>
+            <widget class="QCheckBox" name="checkBox_1">
+             <property name="geometry">
+              <rect>
+               <x>120</x>
+               <y>3</y>
+               <width>100</width>
+               <height>18</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 160, 160);</string>
+             </property>
+             <property name="text">
+              <string>Actual</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QCheckBox" name="checkBox_2">
+             <property name="geometry">
+              <rect>
+               <x>280</x>
+               <y>3</y>
+               <width>100</width>
+               <height>18</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(140, 225, 140);</string>
+             </property>
+             <property name="text">
+              <string>What If</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QCheckBox" name="checkBox_3">
+             <property name="geometry">
+              <rect>
+               <x>420</x>
+               <y>3</y>
+               <width>100</width>
+               <height>18</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(0, 128, 255);</string>
+             </property>
+             <property name="text">
+              <string>All Out</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="page_2">
+         <attribute name="title">
+          <string> All Positions</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <property name="spacing">
+           <number>4</number>
+          </property>
+          <property name="leftMargin">
+           <number>2</number>
+          </property>
+          <property name="topMargin">
+           <number>2</number>
+          </property>
+          <property name="rightMargin">
+           <number>2</number>
+          </property>
+          <property name="bottomMargin">
+           <number>6</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="qframe_05">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>148</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>148</height>
+             </size>
+            </property>
+            <widget class="QELabel" name="qelabel_29">
+             <property name="geometry">
+              <rect>
+               <x>356</x>
+               <y>64</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD06:FWHM</string>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_30">
+             <property name="geometry">
+              <rect>
+               <x>100</x>
+               <y>64</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD06:MAX_FLUX</string>
+             </property>
+             <property name="addUnits">
+              <bool>false</bool>
+             </property>
+             <property name="notation" stdset="0">
+              <enum>QELabel::Scientific</enum>
+             </property>
+            </widget>
+            <widget class="QLabel" name="qlabel_15">
+             <property name="geometry">
+              <rect>
+               <x>612</x>
+               <y>4</y>
+               <width>116</width>
+               <height>15</height>
+              </rect>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>15</height>
+              </size>
+             </property>
+             <property name="font">
+              <font/>
+             </property>
+             <property name="text">
+              <string>Integrated  Flux</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_31">
+             <property name="geometry">
+              <rect>
+               <x>100</x>
+               <y>24</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD04:MAX_FLUX</string>
+             </property>
+             <property name="addUnits">
+              <bool>false</bool>
+             </property>
+             <property name="notation" stdset="0">
+              <enum>QELabel::Scientific</enum>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_32">
+             <property name="geometry">
+              <rect>
+               <x>100</x>
+               <y>44</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD05:MAX_FLUX</string>
+             </property>
+             <property name="addUnits">
+              <bool>false</bool>
+             </property>
+             <property name="notation" stdset="0">
+              <enum>QELabel::Scientific</enum>
+             </property>
+            </widget>
+            <widget class="QLabel" name="qlabel_16">
+             <property name="geometry">
+              <rect>
+               <x>484</x>
+               <y>4</y>
+               <width>116</width>
+               <height>15</height>
+              </rect>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>15</height>
+              </size>
+             </property>
+             <property name="font">
+              <font/>
+             </property>
+             <property name="text">
+              <string>Wght. Ave. Engy</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_33">
+             <property name="geometry">
+              <rect>
+               <x>356</x>
+               <y>24</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD04:FWHM</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="qlabel_17">
+             <property name="geometry">
+              <rect>
+               <x>356</x>
+               <y>4</y>
+               <width>116</width>
+               <height>15</height>
+              </rect>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>15</height>
+              </size>
+             </property>
+             <property name="font">
+              <font/>
+             </property>
+             <property name="text">
+              <string>FWHM</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_34">
+             <property name="geometry">
+              <rect>
+               <x>740</x>
+               <y>64</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD06:POWER</string>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_35">
+             <property name="geometry">
+              <rect>
+               <x>228</x>
+               <y>44</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD05:ENERGY_AT_MAX_FLUX</string>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_36">
+             <property name="geometry">
+              <rect>
+               <x>228</x>
+               <y>24</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD04:ENERGY_AT_MAX_FLUX</string>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_37">
+             <property name="geometry">
+              <rect>
+               <x>484</x>
+               <y>24</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD04:WEIGHTED_AVE_ENERGY</string>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_38">
+             <property name="geometry">
+              <rect>
+               <x>484</x>
+               <y>64</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD06:WEIGHTED_AVE_ENERGY</string>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_39">
+             <property name="geometry">
+              <rect>
+               <x>612</x>
+               <y>44</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD05:INTEGRATED_FLUX</string>
+             </property>
+             <property name="addUnits">
+              <bool>false</bool>
+             </property>
+             <property name="notation" stdset="0">
+              <enum>QELabel::Scientific</enum>
+             </property>
+            </widget>
+            <widget class="QLabel" name="qlabel_18">
+             <property name="geometry">
+              <rect>
+               <x>228</x>
+               <y>4</y>
+               <width>116</width>
+               <height>15</height>
+              </rect>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>15</height>
+              </size>
+             </property>
+             <property name="font">
+              <font/>
+             </property>
+             <property name="text">
+              <string>Energy At Max</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_40">
+             <property name="geometry">
+              <rect>
+               <x>740</x>
+               <y>44</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD05:POWER</string>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_41">
+             <property name="geometry">
+              <rect>
+               <x>612</x>
+               <y>64</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD06:INTEGRATED_FLUX</string>
+             </property>
+             <property name="addUnits">
+              <bool>false</bool>
+             </property>
+             <property name="notation" stdset="0">
+              <enum>QELabel::Scientific</enum>
+             </property>
+            </widget>
+            <widget class="QLabel" name="qlabel_19">
+             <property name="geometry">
+              <rect>
+               <x>100</x>
+               <y>4</y>
+               <width>116</width>
+               <height>15</height>
+              </rect>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>15</height>
+              </size>
+             </property>
+             <property name="font">
+              <font/>
+             </property>
+             <property name="text">
+              <string>Max Flux</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_42">
+             <property name="geometry">
+              <rect>
+               <x>356</x>
+               <y>44</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD05:FWHM</string>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_43">
+             <property name="geometry">
+              <rect>
+               <x>612</x>
+               <y>24</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD04:INTEGRATED_FLUX</string>
+             </property>
+             <property name="addUnits">
+              <bool>false</bool>
+             </property>
+             <property name="notation" stdset="0">
+              <enum>QELabel::Scientific</enum>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_44">
+             <property name="geometry">
+              <rect>
+               <x>228</x>
+               <y>64</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD06:ENERGY_AT_MAX_FLUX</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="qlabel_20">
+             <property name="geometry">
+              <rect>
+               <x>740</x>
+               <y>4</y>
+               <width>116</width>
+               <height>15</height>
+              </rect>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>15</height>
+              </size>
+             </property>
+             <property name="font">
+              <font/>
+             </property>
+             <property name="text">
+              <string>Power</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_45">
+             <property name="geometry">
+              <rect>
+               <x>484</x>
+               <y>44</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD05:WEIGHTED_AVE_ENERGY</string>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_46">
+             <property name="geometry">
+              <rect>
+               <x>740</x>
+               <y>24</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD04:POWER</string>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_47">
+             <property name="geometry">
+              <rect>
+               <x>484</x>
+               <y>106</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD08:WEIGHTED_AVE_ENERGY</string>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_48">
+             <property name="geometry">
+              <rect>
+               <x>100</x>
+               <y>86</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD07:MAX_FLUX</string>
+             </property>
+             <property name="addUnits">
+              <bool>false</bool>
+             </property>
+             <property name="notation" stdset="0">
+              <enum>QELabel::Scientific</enum>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_49">
+             <property name="geometry">
+              <rect>
+               <x>356</x>
+               <y>106</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD08:FWHM</string>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_50">
+             <property name="geometry">
+              <rect>
+               <x>228</x>
+               <y>86</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD07:ENERGY_AT_MAX_FLUX</string>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_51">
+             <property name="geometry">
+              <rect>
+               <x>228</x>
+               <y>126</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD09:ENERGY_AT_MAX_FLUX</string>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_52">
+             <property name="geometry">
+              <rect>
+               <x>612</x>
+               <y>106</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD08:INTEGRATED_FLUX</string>
+             </property>
+             <property name="addUnits">
+              <bool>false</bool>
+             </property>
+             <property name="notation" stdset="0">
+              <enum>QELabel::Scientific</enum>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_53">
+             <property name="geometry">
+              <rect>
+               <x>100</x>
+               <y>106</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD08:MAX_FLUX</string>
+             </property>
+             <property name="addUnits">
+              <bool>false</bool>
+             </property>
+             <property name="notation" stdset="0">
+              <enum>QELabel::Scientific</enum>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_54">
+             <property name="geometry">
+              <rect>
+               <x>228</x>
+               <y>106</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD08:ENERGY_AT_MAX_FLUX</string>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_55">
+             <property name="geometry">
+              <rect>
+               <x>740</x>
+               <y>106</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD08:POWER</string>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_56">
+             <property name="geometry">
+              <rect>
+               <x>484</x>
+               <y>86</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD07:WEIGHTED_AVE_ENERGY</string>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_57">
+             <property name="geometry">
+              <rect>
+               <x>484</x>
+               <y>126</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD09:WEIGHTED_AVE_ENERGY</string>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_58">
+             <property name="geometry">
+              <rect>
+               <x>612</x>
+               <y>86</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD07:INTEGRATED_FLUX</string>
+             </property>
+             <property name="addUnits">
+              <bool>false</bool>
+             </property>
+             <property name="notation" stdset="0">
+              <enum>QELabel::Scientific</enum>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_59">
+             <property name="geometry">
+              <rect>
+               <x>356</x>
+               <y>86</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD07:FWHM</string>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_60">
+             <property name="geometry">
+              <rect>
+               <x>740</x>
+               <y>86</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD07:POWER</string>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_61">
+             <property name="geometry">
+              <rect>
+               <x>612</x>
+               <y>126</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD09:INTEGRATED_FLUX</string>
+             </property>
+             <property name="addUnits">
+              <bool>false</bool>
+             </property>
+             <property name="notation" stdset="0">
+              <enum>QELabel::Scientific</enum>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_62">
+             <property name="geometry">
+              <rect>
+               <x>100</x>
+               <y>126</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD09:MAX_FLUX</string>
+             </property>
+             <property name="addUnits">
+              <bool>false</bool>
+             </property>
+             <property name="notation" stdset="0">
+              <enum>QELabel::Scientific</enum>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_63">
+             <property name="geometry">
+              <rect>
+               <x>356</x>
+               <y>126</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD09:FWHM</string>
+             </property>
+            </widget>
+            <widget class="QELabel" name="qelabel_64">
+             <property name="geometry">
+              <rect>
+               <x>740</x>
+               <y>126</y>
+               <width>116</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>116</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>17</height>
+              </size>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+             <property name="variable" stdset="0">
+              <string>MCTRSD09:POWER</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="qlabel_21">
+             <property name="geometry">
+              <rect>
+               <x>8</x>
+               <y>24</y>
+               <width>64</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>What If A</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="qlabel_22">
+             <property name="geometry">
+              <rect>
+               <x>8</x>
+               <y>44</y>
+               <width>64</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>What If B</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="qlabel_23">
+             <property name="geometry">
+              <rect>
+               <x>8</x>
+               <y>64</y>
+               <width>64</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>What If C</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="qlabel_24">
+             <property name="geometry">
+              <rect>
+               <x>8</x>
+               <y>86</y>
+               <width>64</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>What If D</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="qlabel_25">
+             <property name="geometry">
+              <rect>
+               <x>8</x>
+               <y>106</y>
+               <width>64</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>What If E</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="qlabel_26">
+             <property name="geometry">
+              <rect>
+               <x>8</x>
+               <y>126</y>
+               <width>64</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>What If F</string>
+             </property>
+            </widget>
+           </widget>
+          </item>
+          <item>
+           <widget class="QEPlot" name="qeplot_02">
+            <property name="minimumSize">
+             <size>
+              <width>1080</width>
+              <height>232</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="defaultStyle" stdset="0">
+             <string>QWidget { background-color: rgba(240, 240, 240, 255); color: rgba(0, 0, 0, 255); }</string>
+            </property>
+            <property name="displayAlarmStateOption" stdset="0">
+             <enum>QEFrame::WhenInvalid</enum>
+            </property>
+            <property name="variable2" stdset="0">
+             <string>MCTRSD04:SPECTRUM</string>
+            </property>
+            <property name="variable3" stdset="0">
+             <string>MCTRSD05:SPECTRUM</string>
+            </property>
+            <property name="variable4" stdset="0">
+             <string>MCTRSD06:SPECTRUM</string>
+            </property>
+            <property name="variable5" stdset="0">
+             <string>MCTRSD07:SPECTRUM</string>
+            </property>
+            <property name="variable6" stdset="0">
+             <string>MCTRSD08:SPECTRUM</string>
+            </property>
+            <property name="variable7" stdset="0">
+             <string>MCTRSD09:SPECTRUM</string>
+            </property>
+            <property name="traceColor3">
+             <color>
+              <red>0</red>
+              <green>192</green>
+              <blue>0</blue>
+             </color>
+            </property>
+            <property name="traceColor7">
+             <color>
+              <red>208</red>
+              <green>208</green>
+              <blue>0</blue>
+             </color>
+            </property>
+            <property name="traceWidth2">
+             <number>2</number>
+            </property>
+            <property name="traceWidth3">
+             <number>2</number>
+            </property>
+            <property name="traceWidth4">
+             <number>2</number>
+            </property>
+            <property name="traceWidth5">
+             <number>2</number>
+            </property>
+            <property name="traceWidth6">
+             <number>2</number>
+            </property>
+            <property name="traceWidth7">
+             <number>2</number>
+            </property>
+            <property name="gridEnableMajorX">
+             <bool>true</bool>
+            </property>
+            <property name="gridEnableMajorY">
+             <bool>true</bool>
+            </property>
+            <property name="xUnit">
+             <string>keV</string>
+            </property>
+            <property name="yUnit">
+             <string>ph/s/0.1%BW</string>
+            </property>
+            <property name="xStart">
+             <double>1.000000000000000</double>
+            </property>
+            <property name="xIncrement">
+             <double>0.100000000000000</double>
+            </property>
+            <property name="margin">
+             <number>4</number>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="qframe_06">
+            <property name="minimumSize">
+             <size>
+              <width>1080</width>
+              <height>24</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>24</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <widget class="QLabel" name="qlabel_27">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>3</y>
+               <width>64</width>
+               <height>17</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Legend</string>
+             </property>
+            </widget>
+            <widget class="QCheckBox" name="checkBox_4">
+             <property name="geometry">
+              <rect>
+               <x>120</x>
+               <y>3</y>
+               <width>100</width>
+               <height>18</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 160, 160);</string>
+             </property>
+             <property name="text">
+              <string>What If A</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QCheckBox" name="checkBox_5">
+             <property name="geometry">
+              <rect>
+               <x>280</x>
+               <y>3</y>
+               <width>100</width>
+               <height>18</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(140, 225, 140);</string>
+             </property>
+             <property name="text">
+              <string>What If B</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QCheckBox" name="checkBox_6">
+             <property name="geometry">
+              <rect>
+               <x>420</x>
+               <y>3</y>
+               <width>100</width>
+               <height>18</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(0, 128, 255);</string>
+             </property>
+             <property name="text">
+              <string>What If C</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QCheckBox" name="checkBox_7">
+             <property name="geometry">
+              <rect>
+               <x>554</x>
+               <y>3</y>
+               <width>100</width>
+               <height>18</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(100, 225, 255);</string>
+             </property>
+             <property name="text">
+              <string>What If D</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QCheckBox" name="checkBox_8">
+             <property name="geometry">
+              <rect>
+               <x>714</x>
+               <y>3</y>
+               <width>100</width>
+               <height>18</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255,100,255);</string>
+             </property>
+             <property name="text">
+              <string>What If E</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QCheckBox" name="checkBox_9">
+             <property name="geometry">
+              <rect>
+               <x>854</x>
+               <y>3</y>
+               <width>100</width>
+               <height>18</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(208, 208, 0);</string>
+             </property>
+             <property name="text">
+              <string>What If F</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QEComboBox</class>
+   <extends>QComboBox</extends>
+   <header>QEComboBox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEPlot</class>
+   <extends>QEFrame</extends>
+   <header>QEPlot.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEPushButton</class>
+   <extends>QPushButton</extends>
+   <header>QEPushButton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEFrame</class>
+   <extends>QFrame</extends>
+   <header>QEFrame.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>VCLNavigatePushButton</class>
+   <extends>QEPushButton</extends>
+   <header>VCLNavigatePushButton.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>checkBox_1</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>qeplot_01</receiver>
+   <slot>setTraceVisible2(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>212</x>
+     <y>742</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>173</x>
+     <y>500</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_2</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>qeplot_01</receiver>
+   <slot>setTraceVisible3(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>391</x>
+     <y>742</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>345</x>
+     <y>503</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_3</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>qeplot_01</receiver>
+   <slot>setTraceVisible4(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>525</x>
+     <y>742</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>488</x>
+     <y>530</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_4</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>qeplot_02</receiver>
+   <slot>setTraceVisible2(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>219</x>
+     <y>736</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>225</x>
+     <y>627</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_5</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>qeplot_02</receiver>
+   <slot>setTraceVisible3(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>386</x>
+     <y>734</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>385</x>
+     <y>647</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_6</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>qeplot_02</receiver>
+   <slot>setTraceVisible4(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>528</x>
+     <y>725</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>533</x>
+     <y>558</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_7</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>qeplot_02</receiver>
+   <slot>setTraceVisible5(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>663</x>
+     <y>736</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>658</x>
+     <y>637</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_8</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>qeplot_02</receiver>
+   <slot>setTraceVisible6(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>793</x>
+     <y>733</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>801</x>
+     <y>662</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_9</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>qeplot_02</receiver>
+   <slot>setTraceVisible7(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>954</x>
+     <y>733</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>945</x>
+     <y>637</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>851</width>
+    <height>251</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="minimumSize">
+      <size>
+       <width>851</width>
+       <height>251</height>
+      </size>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="lineWidth">
+      <number>0</number>
+     </property>
+     <widget class="QFrame" name="frame_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>171</width>
+        <height>251</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame{background-color: rgba(70, 1, 155, 120)};</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <widget class="QERadioGroup" name="qeradiogroup">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>47</y>
+         <width>151</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="displayAlarmStateOption" stdset="0">
+        <enum>QEAbstractWidget::Never</enum>
+       </property>
+       <property name="variable" stdset="0">
+        <string>MCTFLT01:FILTER_SELECTION_CMD</string>
+       </property>
+       <property name="title" stdset="0">
+        <string/>
+       </property>
+       <property name="columns">
+        <number>1</number>
+       </property>
+       <property name="buttonStyle">
+        <enum>QRadioGroup::Radio</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>64</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+       </property>
+       <property name="text">
+        <string>Paddle 1</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>81</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+       </property>
+       <property name="text">
+        <string>Select Filter</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>162</y>
+         <width>144</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+       </property>
+       <property name="text">
+        <string>Requested Position</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>200</y>
+         <width>81</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+       </property>
+       <property name="text">
+        <string>Readback</string>
+       </property>
+      </widget>
+      <widget class="QELabel" name="qelabel">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>182</y>
+         <width>101</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="variable" stdset="0">
+        <string>MCTFLT01:PADDLE_POSITION_SP</string>
+       </property>
+      </widget>
+      <widget class="QELabel" name="qelabel_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>220</y>
+         <width>101</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="variable" stdset="0">
+        <string>MCTFLT01MOT01.RBV</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_4">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>0</y>
+        <width>171</width>
+        <height>251</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame{background-color: rgba(254, 246, 1, 150)};</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <widget class="QERadioGroup" name="qeradiogroup_4">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>47</y>
+         <width>151</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="displayAlarmStateOption" stdset="0">
+        <enum>QEAbstractWidget::Never</enum>
+       </property>
+       <property name="variable" stdset="0">
+        <string>MCTFLT04:FILTER_SELECTION_CMD</string>
+       </property>
+       <property name="title" stdset="0">
+        <string/>
+       </property>
+       <property name="columns">
+        <number>1</number>
+       </property>
+       <property name="buttonStyle">
+        <enum>QRadioGroup::Radio</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_13">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>64</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+       </property>
+       <property name="text">
+        <string>Paddle 4</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_14">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>81</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+       </property>
+       <property name="text">
+        <string>Select Filter</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_15">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>162</y>
+         <width>144</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+       </property>
+       <property name="text">
+        <string>Requested Position</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_16">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>200</y>
+         <width>81</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+       </property>
+       <property name="text">
+        <string>Readback</string>
+       </property>
+      </widget>
+      <widget class="QELabel" name="qelabel_7">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>182</y>
+         <width>101</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="variable" stdset="0">
+        <string>MCTFLT04:PADDLE_POSITION_SP</string>
+       </property>
+      </widget>
+      <widget class="QELabel" name="qelabel_8">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>220</y>
+         <width>101</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="variable" stdset="0">
+        <string>MCTFLT04MOT01.RBV</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_3">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>0</y>
+        <width>171</width>
+        <height>251</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame{background-color: rgba(0, 187, 0, 150)};</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <widget class="QERadioGroup" name="qeradiogroup_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>47</y>
+         <width>151</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="displayAlarmStateOption" stdset="0">
+        <enum>QEAbstractWidget::Never</enum>
+       </property>
+       <property name="variable" stdset="0">
+        <string>MCTFLT03:FILTER_SELECTION_CMD</string>
+       </property>
+       <property name="title" stdset="0">
+        <string/>
+       </property>
+       <property name="columns">
+        <number>1</number>
+       </property>
+       <property name="buttonStyle">
+        <enum>QRadioGroup::Radio</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_9">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>64</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+       </property>
+       <property name="text">
+        <string>Paddle 3</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_10">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>81</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+       </property>
+       <property name="text">
+        <string>Select Filter</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_11">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>162</y>
+         <width>144</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+       </property>
+       <property name="text">
+        <string>Requested Position</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_12">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>200</y>
+         <width>81</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+       </property>
+       <property name="text">
+        <string>Readback</string>
+       </property>
+      </widget>
+      <widget class="QELabel" name="qelabel_5">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>182</y>
+         <width>101</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="variable" stdset="0">
+        <string>MCTFLT03:PADDLE_POSITION_SP</string>
+       </property>
+      </widget>
+      <widget class="QELabel" name="qelabel_6">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>220</y>
+         <width>101</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="variable" stdset="0">
+        <string>MCTFLT03MOT01.RBV</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_5">
+      <property name="geometry">
+       <rect>
+        <x>680</x>
+        <y>0</y>
+        <width>171</width>
+        <height>251</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame{background-color: rgba(221, 0, 0, 150)};</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <widget class="QERadioGroup" name="qeradiogroup_5">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>47</y>
+         <width>151</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="displayAlarmStateOption" stdset="0">
+        <enum>QEAbstractWidget::Never</enum>
+       </property>
+       <property name="variable" stdset="0">
+        <string>MCTFLT05:FILTER_SELECTION_CMD</string>
+       </property>
+       <property name="title" stdset="0">
+        <string/>
+       </property>
+       <property name="columns">
+        <number>1</number>
+       </property>
+       <property name="buttonStyle">
+        <enum>QRadioGroup::Radio</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_17">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>64</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+       </property>
+       <property name="text">
+        <string>Paddle 5</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_18">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>81</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+       </property>
+       <property name="text">
+        <string>Select Filter</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_19">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>162</y>
+         <width>144</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+       </property>
+       <property name="text">
+        <string>Requested Position</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_20">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>200</y>
+         <width>81</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+       </property>
+       <property name="text">
+        <string>Readback</string>
+       </property>
+      </widget>
+      <widget class="QELabel" name="qelabel_9">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>182</y>
+         <width>101</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="variable" stdset="0">
+        <string>MCTFLT05:PADDLE_POSITION_SP</string>
+       </property>
+      </widget>
+      <widget class="QELabel" name="qelabel_10">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>220</y>
+         <width>101</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="variable" stdset="0">
+        <string>MCTFLT05MOT01.RBV</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_6">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>0</y>
+        <width>171</width>
+        <height>251</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame{background-color: rgba(0, 126, 255, 150)};</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <widget class="QERadioGroup" name="qeradiogroup_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>47</y>
+         <width>151</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="displayAlarmStateOption" stdset="0">
+        <enum>QEAbstractWidget::Never</enum>
+       </property>
+       <property name="variable" stdset="0">
+        <string>MCTFLT02:FILTER_SELECTION_CMD</string>
+       </property>
+       <property name="title" stdset="0">
+        <string/>
+       </property>
+       <property name="columns">
+        <number>1</number>
+       </property>
+       <property name="buttonStyle">
+        <enum>QRadioGroup::Radio</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>64</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+       </property>
+       <property name="text">
+        <string>Paddle 2</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>81</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+       </property>
+       <property name="text">
+        <string>Select Filter</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>162</y>
+         <width>144</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+       </property>
+       <property name="text">
+        <string>Requested Position</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>200</y>
+         <width>81</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+       </property>
+       <property name="text">
+        <string>Readback</string>
+       </property>
+      </widget>
+      <widget class="QELabel" name="qelabel_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>182</y>
+         <width>101</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="variable" stdset="0">
+        <string>MCTFLT02:PADDLE_POSITION_SP</string>
+       </property>
+      </widget>
+      <widget class="QELabel" name="qelabel_4">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>220</y>
+         <width>101</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="variable" stdset="0">
+        <string>MCTFLT02MOT01.RBV</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QERadioGroup</class>
+   <extends>QWidget</extends>
+   <header>QERadioGroup.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,840 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1212</width>
+    <height>717</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>866</width>
+    <height>617</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>86600</width>
+    <height>64800</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QFrame" name="frame">
+     <property name="minimumSize">
+      <size>
+       <width>1212</width>
+       <height>717</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame{background-color: rgb(255, 255, 255)};</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="lineWidth">
+      <number>0</number>
+     </property>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>190</y>
+        <width>991</width>
+        <height>621</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>DMM_energy_control.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>70</y>
+        <width>701</width>
+        <height>201</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="title">
+       <string> Energy Control</string>
+      </property>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>14</x>
+         <y>48</y>
+         <width>125</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Stripe Request</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>13</x>
+         <y>77</y>
+         <width>125</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Offset Request</string>
+       </property>
+      </widget>
+      <widget class="QENumericEdit" name="qenumericedit">
+       <property name="geometry">
+        <rect>
+         <x>148</x>
+         <y>73</y>
+         <width>140</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="variable" stdset="0">
+        <string>MCTMONO01:OFFSET_REQUEST_SP</string>
+       </property>
+       <property name="useApplyButton">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>13</x>
+         <y>106</y>
+         <width>125</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Energy Request</string>
+       </property>
+      </widget>
+      <widget class="QENumericEdit" name="qenumericedit_2">
+       <property name="geometry">
+        <rect>
+         <x>148</x>
+         <y>103</y>
+         <width>140</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="variable" stdset="0">
+        <string>MCTMONO01:ENERGY_REQUEST_SP</string>
+       </property>
+       <property name="useApplyButton">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QELabel" name="qelabel">
+       <property name="geometry">
+        <rect>
+         <x>577</x>
+         <y>18</y>
+         <width>111</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="variable" stdset="0">
+        <string>MCTMONO01:ENERGY_CONFIG_VALID_STATUS</string>
+       </property>
+       <property name="text">
+        <string>Invalid</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>13</x>
+         <y>147</y>
+         <width>131</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Script heartbeat</string>
+       </property>
+      </widget>
+      <widget class="QESimpleShape" name="qesimpleshape_1">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>146</y>
+         <width>21</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>17</width>
+         <height>17</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>91</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="edgeWidth">
+        <number>2</number>
+       </property>
+       <property name="modulus">
+        <number>2</number>
+       </property>
+       <property name="colour0" stdset="0">
+        <color>
+         <red>0</red>
+         <green>213</green>
+         <blue>255</blue>
+        </color>
+       </property>
+       <property name="colour1" stdset="0">
+        <color>
+         <red>0</red>
+         <green>107</green>
+         <blue>128</blue>
+        </color>
+       </property>
+       <property name="variable" stdset="0">
+        <string>MCTMONO01:ENERGY_CTRL_SCRIPT_HEARTBEAT</string>
+       </property>
+       <property name="displayAlarmStateOption" stdset="0">
+        <enum>QESimpleShape::Never</enum>
+       </property>
+      </widget>
+      <widget class="QEComboBox" name="qecombobox_2">
+       <property name="geometry">
+        <rect>
+         <x>148</x>
+         <y>15</y>
+         <width>111</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="variable" stdset="0">
+        <string>MCTMONO01:ENERGY_USER_MODE_CMD</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>20</y>
+         <width>125</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Control Mode</string>
+       </property>
+      </widget>
+      <widget class="QELink" name="qelink">
+       <property name="geometry">
+        <rect>
+         <x>590</x>
+         <y>100</y>
+         <width>27</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="comparisonValue">
+        <string>0</string>
+       </property>
+       <property name="outTrueValue">
+        <string>1</string>
+       </property>
+       <property name="outFalseValue">
+        <string>0</string>
+       </property>
+      </widget>
+      <widget class="QELabel" name="qelabel_9">
+       <property name="geometry">
+        <rect>
+         <x>577</x>
+         <y>47</y>
+         <width>111</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="variable" stdset="0">
+        <string>MCTMONO01:MOVING_MONITOR</string>
+       </property>
+       <property name="text">
+        <string>Moving</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>13</x>
+         <y>173</y>
+         <width>125</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Script messages</string>
+       </property>
+      </widget>
+      <widget class="QELabel" name="qelabel_10">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>170</y>
+         <width>257</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="variable" stdset="0">
+        <string>MCTMONO01:ENERGY_CTRL_SCRIPT_MESSAGE</string>
+       </property>
+      </widget>
+      <widget class="VCLStopPushButton" name="vclstoppushbutton">
+       <property name="geometry">
+        <rect>
+         <x>420</x>
+         <y>74</y>
+         <width>121</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Stop All</string>
+       </property>
+       <property name="variable" stdset="0">
+        <string>MCTMONO01:STOP_ALL_MOTION_CMD</string>
+       </property>
+      </widget>
+      <widget class="VCLValidatePushButton" name="vclvalidatepushbutton">
+       <property name="geometry">
+        <rect>
+         <x>420</x>
+         <y>16</y>
+         <width>121</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="variable" stdset="0">
+        <string>MCTMONO01:ENERGY_CONFIG_VALID_CMD</string>
+       </property>
+      </widget>
+      <widget class="VCLStartPushButton" name="vclstartpushbutton">
+       <property name="geometry">
+        <rect>
+         <x>420</x>
+         <y>45</y>
+         <width>121</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Request Energy</string>
+       </property>
+       <property name="variable" stdset="0">
+        <string>MCTMONO01:REQUEST_ENERGY_CMD</string>
+       </property>
+      </widget>
+      <widget class="QELabel" name="qelabel_11">
+       <property name="geometry">
+        <rect>
+         <x>295</x>
+         <y>76</y>
+         <width>111</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="variable" stdset="0">
+        <string>MCTMONO01:OFFSET_REQUEST_SP</string>
+       </property>
+       <property name="text">
+        <string>0.00 mm</string>
+       </property>
+      </widget>
+      <widget class="QELabel" name="qelabel_12">
+       <property name="geometry">
+        <rect>
+         <x>295</x>
+         <y>105</y>
+         <width>111</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="variable" stdset="0">
+        <string>MCTMONO01:ENERGY_REQUEST_SP</string>
+       </property>
+       <property name="text">
+        <string>8.00 keV</string>
+       </property>
+      </widget>
+      <widget class="QELabel" name="qelabel_13">
+       <property name="geometry">
+        <rect>
+         <x>295</x>
+         <y>47</y>
+         <width>111</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="variable" stdset="0">
+        <string>MCTMONO01:STRIPE_REQUEST_CMD</string>
+       </property>
+       <property name="text">
+        <string>Ru/C</string>
+       </property>
+      </widget>
+      <widget class="QELabel" name="qelabel_14">
+       <property name="geometry">
+        <rect>
+         <x>295</x>
+         <y>18</y>
+         <width>111</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="variable" stdset="0">
+        <string>MCTMONO01:ENERGY_USER_MODE_CMD</string>
+       </property>
+       <property name="text">
+        <string>Basic</string>
+       </property>
+      </widget>
+      <widget class="QEComboBox" name="qecombobox_3">
+       <property name="geometry">
+        <rect>
+         <x>148</x>
+         <y>44</y>
+         <width>111</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="variable" stdset="0">
+        <string>MCTMONO01:STRIPE_REQUEST_CMD</string>
+       </property>
+      </widget>
+      <widget class="QELabel" name="qelabel_15">
+       <property name="geometry">
+        <rect>
+         <x>420</x>
+         <y>170</y>
+         <width>268</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="variable" stdset="0">
+        <string>MCTMONO01:MESSAGE_TIMESTAMP</string>
+       </property>
+       <property name="format" stdset="0">
+        <enum>QELabel::Default</enum>
+       </property>
+      </widget>
+      <widget class="QELabel" name="qelabel_16">
+       <property name="geometry">
+        <rect>
+         <x>450</x>
+         <y>100</y>
+         <width>91</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+       <property name="variable" stdset="0">
+        <string>MCTMONO01:BLOCK_ENERGY_REQUESTS</string>
+       </property>
+       <property name="visible" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>Allowed</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line">
+       <property name="geometry">
+        <rect>
+         <x>8</x>
+         <y>138</y>
+         <width>684</width>
+         <height>3</height>
+        </rect>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_2">
+       <property name="geometry">
+        <rect>
+         <x>409</x>
+         <y>12</y>
+         <width>8</width>
+         <height>121</height>
+        </rect>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>520</y>
+        <width>591</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="title">
+       <string>Multilayer 1 Motors</string>
+      </property>
+      <widget class="QEForm" name="qeform_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>120</y>
+         <width>571</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="uiFile" stdset="0">
+        <string>ppmac1motor_sl.ui</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>MOTOR=MCTMONO01MOT06</string>
+       </property>
+      </widget>
+      <widget class="QEForm" name="qeform">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>571</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="uiFile" stdset="0">
+        <string>ppmac1motor_sl.ui</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>MOTOR=MCTMONO01MOT04</string>
+       </property>
+      </widget>
+      <widget class="QEForm" name="qeform_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>70</y>
+         <width>571</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="uiFile" stdset="0">
+        <string>ppmac1motor_sl.ui</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>MOTOR=MCTMONO01MOT02</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>20</y>
+        <width>341</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>21</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>DMM Energy Control</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_4">
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>470</y>
+        <width>591</width>
+        <height>231</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="title">
+       <string>Multilayer 2 Motors</string>
+      </property>
+      <widget class="QEForm" name="qeform_4">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>120</y>
+         <width>571</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="uiFile" stdset="0">
+        <string>ppmac1motor_sl.ui</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>MOTOR=MCTMONO01MOT07</string>
+       </property>
+      </widget>
+      <widget class="QEForm" name="qeform_5">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>571</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="uiFile" stdset="0">
+        <string>ppmac1motor_sl.ui</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>MOTOR=MCTMONO01MOT05</string>
+       </property>
+      </widget>
+      <widget class="QEForm" name="qeform_6">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>70</y>
+         <width>571</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="uiFile" stdset="0">
+        <string>ppmac1motor_sl.ui</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>MOTOR=MCTMONO01MOT03</string>
+       </property>
+      </widget>
+      <widget class="QEForm" name="qeform_10">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>170</y>
+         <width>571</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="uiFile" stdset="0">
+        <string>ppmac1motor_sl.ui</string>
+       </property>
+       <property name="variableSubstitutions" stdset="0">
+        <string>MOTOR=MCTMONO01MOT01</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QEComboBox</class>
+   <extends>QComboBox</extends>
+   <header>QEComboBox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEForm</class>
+   <extends>QWidget</extends>
+   <header>QEForm.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QENumericEdit</class>
+   <extends>QWidget</extends>
+   <header>QENumericEdit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEPushButton</class>
+   <extends>QPushButton</extends>
+   <header>QEPushButton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QESimpleShape</class>
+   <extends>QSimpleShape</extends>
+   <header>QESimpleShape.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QELink</class>
+   <extends>QLabel</extends>
+   <header>QELink.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QSimpleShape</class>
+   <extends>QWidget</extends>
+   <header>QSimpleShape.h</header>
+  </customwidget>
+  <customwidget>
+   <class>VCLStartPushButton</class>
+   <extends>QEPushButton</extends>
+   <header>VCLStartPushButton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>VCLStopPushButton</class>
+   <extends>QEPushButton</extends>
+   <header>VCLStopPushButton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>VCLValidatePushButton</class>
+   <extends>QEPushButton</extends>
+   <header>VCLValidatePushButton.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>qelink</sender>
+   <signal>out(bool)</signal>
+   <receiver>qenumericedit</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>736</x>
+     <y>605</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>428</x>
+     <y>548</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>qecombobox_2</sender>
+   <signal>dbValueChanged(int)</signal>
+   <receiver>qelink</receiver>
+   <slot>in(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>398</x>
+     <y>488</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>725</x>
+     <y>603</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>qelabel_16</sender>
+   <signal>dbValueChanged(bool)</signal>
+   <receiver>vclstartpushbutton</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>631</x>
+     <y>586</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>650</x>
+     <y>522</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

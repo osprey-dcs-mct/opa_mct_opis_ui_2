@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>293</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>scanDetPlot.ui</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QFrame" name="mainFormFrame">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <widget class="QEPlotter" name="qeplotter_001">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>18</y>
+        <width>500</width>
+        <height>250</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="defaultStyle" stdset="0">
+       <string>QWidget { background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); }</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="toolBarIsVisible" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="pvItemsIsVisible" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="statusIsVisible" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="xLogarithmic">
+       <bool>false</bool>
+      </property>
+      <property name="yLogarithmic">
+       <bool>true</bool>
+      </property>
+      <property name="xMinimum">
+       <double>0.000000000000000</double>
+      </property>
+      <property name="xMaximum">
+       <double>1.000000000000000</double>
+      </property>
+      <property name="yMinimum">
+       <double>0.000000000100000</double>
+      </property>
+      <property name="yMaximum">
+       <double>0.000001000000000</double>
+      </property>
+      <property name="DataVariableX" stdset="0">
+       <string>$(P)$(S).P1CA</string>
+      </property>
+      <property name="DataVariableA" stdset="0">
+       <string>$(P)$(S).D$(N)CA</string>
+      </property>
+      <property name="SizeVariableX" stdset="0">
+       <string>200</string>
+      </property>
+      <property name="ColourA">
+       <color>
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </property>
+     </widget>
+     <widget class="QESubstitutedLabel" name="qesubstitutedlabel_001">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>187</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight</set>
+      </property>
+      <property name="labelText" stdset="0">
+       <string>$(P)$(S)   Y=</string>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_001">
+      <property name="geometry">
+       <rect>
+        <x>187</x>
+        <y>0</y>
+        <width>312</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P)$(S).D$(N)PV</string>
+      </property>
+      <property name="notation" stdset="0">
+       <enum>QELabel::Fixed</enum>
+      </property>
+     </widget>
+     <widget class="QELabel" name="qelabel_002">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>272</y>
+        <width>500</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="variable" stdset="0">
+       <string>$(P)$(S).P1PV</string>
+      </property>
+      <property name="notation" stdset="0">
+       <enum>QELabel::Fixed</enum>
+      </property>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QELabel</class>
+   <extends>QLabel</extends>
+   <header>QELabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEPlotter</class>
+   <extends>QEFrame</extends>
+   <header>QEPlotter.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QESubstitutedLabel</class>
+   <extends>QLabel</extends>
+   <header>QESubstitutedLabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEFrame</class>
+   <extends>QFrame</extends>
+   <header>QEFrame.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>268</width>
+    <height>180</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Hutch B Table 1</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QFrame" name="mainFormFrame">
+     <property name="minimumSize">
+      <size>
+       <width>268</width>
+       <height>180</height>
+      </size>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="leftMargin">
+       <number>4</number>
+      </property>
+      <property name="topMargin">
+       <number>6</number>
+      </property>
+      <property name="rightMargin">
+       <number>4</number>
+      </property>
+      <property name="bottomMargin">
+       <number>4</number>
+      </property>
+      <item>
+       <widget class="QEForm" name="qeform_2">
+        <property name="uiFile" stdset="0">
+         <string>ppmac1cs_motor.ui</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string>MOTOR=MCTTBL01:CS1:PITCH</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QEForm" name="qeform_3">
+        <property name="uiFile" stdset="0">
+         <string>ppmac1cs_motor.ui</string>
+        </property>
+        <property name="variableSubstitutions" stdset="0">
+         <string>MOTOR=MCTTBL01:CS1:HEIGHT</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QEForm</class>
+   <extends>QWidget</extends>
+   <header>QEForm.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

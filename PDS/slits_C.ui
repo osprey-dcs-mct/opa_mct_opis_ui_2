@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>321</width>
+    <height>321</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>321</width>
+    <height>231</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>321</width>
+    <height>321</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Beam Defining Slits C</string>
+  </property>
+  <widget class="VCLDoubleSlits" name="vcldoubleslits">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>321</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="hsMotor">
+    <string>MCTSLT03:HSIZE</string>
+   </property>
+   <property name="hcMotor">
+    <string>MCTSLT03:HCENTRE</string>
+   </property>
+   <property name="vsMotor">
+    <string>MCTSLT03:VSIZE</string>
+   </property>
+   <property name="vcMotor">
+    <string>MCTSLT03:VCENTRE</string>
+   </property>
+   <property name="innerMotor">
+    <string>MCTSLT03MOT01</string>
+   </property>
+   <property name="outerMotor">
+    <string>MCTSLT03MOT02</string>
+   </property>
+   <property name="upperMotor">
+    <string>MCTSLT03MOT03</string>
+   </property>
+   <property name="lowerMotor">
+    <string>MCTSLT03MOT04</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>VCLDoubleSlits</class>
+   <extends>QWidget</extends>
+   <header>VCLDoubleSlits.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BoxStatusForm</class>
+ <widget class="QWidget" name="BoxStatusForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1524</width>
+    <height>448</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MCT Network Device Status</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QFrame" name="mainFormFrame">
+     <property name="minimumSize">
+      <size>
+       <width>1524</width>
+       <height>0</height>
+      </size>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QEFormGrid" name="boxStatusFormGrid">
+        <property name="uiFile">
+         <string>box_status.ui</string>
+        </property>
+        <property name="number">
+         <number>52</number>
+        </property>
+        <property name="columns">
+         <number>3</number>
+        </property>
+        <property name="gridOrder">
+         <enum>QEFormGrid::ColMajor</enum>
+        </property>
+        <property name="margin">
+         <number>4</number>
+        </property>
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="slotMacroPrefix">
+         <string>BOX</string>
+        </property>
+        <property name="slotStrings">
+         <stringlist>
+          <string>MCTARC01</string>
+          <string>MCTGW01</string>
+          <string>MCTPSSC01</string>
+          <string>MCTCANAMESERVER</string>
+          <string>MCTDEVDOCKER</string>
+          <string>MCTDEVDT</string>
+          <string>MCTDEVKUB</string>
+          <string>MCTDEVKUBGR</string>
+          <string>MCTDEVKUBSO</string>
+          <string>MCTDEVKUBSP</string>
+          <string>MCTDEVKUBTF</string>
+          <string>MCTDEVOPHYD1</string>
+          <string>MCTENGGUIS01</string>
+          <string>MCTENGGUIS02</string>
+          <string>MCTEPSC01</string>
+          <string>MCTHOST01</string>
+          <string>MCTHOST02</string>
+          <string>MCTHOST03</string>
+          <string>MCTHOST05</string>
+          <string>MCTHOST06</string>
+          <string>MCTHOST07</string>
+          <string>MCTHOST08</string>
+          <string>MCTHOST09</string>
+          <string>MCTHOST10</string>
+          <string>MCTHOST11</string>
+          <string>MCTHOST12</string>
+          <string>MCTHOST13</string>
+          <string>MCTHOST14</string>
+          <string>MCTHOST15</string>
+          <string>MCTHOST16</string>
+          <string>MCTHOST17</string>
+          <string>MCTHPC05</string>
+          <string>MCTMCS01</string>
+          <string>MCTMCS02</string>
+          <string>MCTMCS03</string>
+          <string>MCTMCS04</string>
+          <string>MCTMCS05</string>
+          <string>MCTMCS06</string>
+          <string>MCTMCS07</string>
+          <string>MCTMCS08</string>
+          <string>MCTMOX01</string>
+          <string>MCTMOX02</string>
+          <string>MCTMOX03</string>
+          <string>MCTOPHYDAPI01</string>
+          <string>MCTPDS01IPC01</string>
+          <string>MCTPDS01IPC02</string>
+          <string>MCTPDS01IPC03</string>
+          <string>MCTPTZ01</string>
+          <string>MCTRobotController</string>
+          <string>MCTSIMAD01</string>
+          <string>MCTSTEPHENDEV</string>
+          <string>MCTTBL01DAQ01</string>
+         </stringlist>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>402</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QEFormGrid</class>
+   <extends>QEFrame</extends>
+   <header>QEFormGrid.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QEFrame</class>
+   <extends>QFrame</extends>
+   <header>QEFrame.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
