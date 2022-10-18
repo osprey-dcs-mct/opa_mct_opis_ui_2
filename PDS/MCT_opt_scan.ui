@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>522</width>
+    <width>651</width>
     <height>539</height>
    </rect>
   </property>
@@ -235,6 +235,130 @@
     </property>
    </widget>
   </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>110</y>
+     <width>120</width>
+     <height>261</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Slit controls</string>
+   </property>
+   <widget class="QERadioGroup" name="qeradiogroup_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>101</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QEAbstractWidget::Never</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>MCTSLT01:OP_MODE</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string/>
+    </property>
+    <property name="elementsRequired">
+     <number>0</number>
+    </property>
+    <property name="title" stdset="0">
+     <string>SLT A</string>
+    </property>
+    <property name="columns">
+     <number>1</number>
+    </property>
+    <property name="useDbEnumerations">
+     <bool>true</bool>
+    </property>
+    <property name="buttonStyle">
+     <enum>QRadioGroup::Radio</enum>
+    </property>
+    <property name="buttonOrder">
+     <enum>QRadioGroup::colMajor</enum>
+    </property>
+   </widget>
+   <widget class="QERadioGroup" name="qeradiogroup_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>101</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QEAbstractWidget::Never</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>MCTSLT02:OP_MODE</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string/>
+    </property>
+    <property name="elementsRequired">
+     <number>0</number>
+    </property>
+    <property name="title" stdset="0">
+     <string>SLT B</string>
+    </property>
+    <property name="columns">
+     <number>1</number>
+    </property>
+    <property name="useDbEnumerations">
+     <bool>true</bool>
+    </property>
+    <property name="buttonStyle">
+     <enum>QRadioGroup::Radio</enum>
+    </property>
+    <property name="buttonOrder">
+     <enum>QRadioGroup::colMajor</enum>
+    </property>
+   </widget>
+   <widget class="QERadioGroup" name="qeradiogroup_5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>180</y>
+      <width>101</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="displayAlarmStateOption" stdset="0">
+     <enum>QEAbstractWidget::Never</enum>
+    </property>
+    <property name="variable" stdset="0">
+     <string>MCTSLT03:OP_MODE</string>
+    </property>
+    <property name="variableSubstitutions" stdset="0">
+     <string/>
+    </property>
+    <property name="elementsRequired">
+     <number>0</number>
+    </property>
+    <property name="title" stdset="0">
+     <string>SLT C</string>
+    </property>
+    <property name="columns">
+     <number>1</number>
+    </property>
+    <property name="useDbEnumerations">
+     <bool>true</bool>
+    </property>
+    <property name="buttonStyle">
+     <enum>QRadioGroup::Radio</enum>
+    </property>
+    <property name="buttonOrder">
+     <enum>QRadioGroup::colMajor</enum>
+    </property>
+   </widget>
+  </widget>
   <zorder>vclstoppushbutton</zorder>
   <zorder>vclstartpushbutton</zorder>
   <zorder>qelabel</zorder>
@@ -243,6 +367,7 @@
   <zorder>qepushbutton</zorder>
   <zorder>qeform</zorder>
   <zorder>groupBox</zorder>
+  <zorder>groupBox_2</zorder>
  </widget>
  <customwidgets>
   <customwidget>
@@ -264,6 +389,11 @@
    <class>QEPushButton</class>
    <extends>QPushButton</extends>
    <header>QEPushButton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QERadioGroup</class>
+   <extends>QWidget</extends>
+   <header>QERadioGroup.h</header>
   </customwidget>
   <customwidget>
    <class>QBitStatus</class>
